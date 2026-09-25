@@ -565,6 +565,9 @@ public final class ThermenModel {
         w = new Wall(ex, 3, 0, 12, Mat.STUCCO, Mat.STUCCO);
         for (double deg = 105; deg <= 255; deg += 15) w.add(Opening.niche(ex.atDeg(deg), 3.6, 1, 7.5, 1.6, Mat.PLASTER));
         Walls.build(mb, w);
+        // Eckpfeiler an den Übergängen der Exedra zur geraden Mauer
+        mb.box(-PX - 1.5, 0, 44.5, -PX + 1.5, 12, 47.5, Mat.STUCCO, false);
+        mb.box(-PX - 1.5, 0, -19.5, -PX + 1.5, 12, -16.5, Mat.STUCCO, false);
         int ek = 0;
         for (double deg = 105; deg <= 255; deg += 15) {
             double a = Math.toRadians(deg);
