@@ -201,14 +201,14 @@ public final class ThermenModel {
         w = new Wall(se, T_PER, 0, H_PER, Mat.STUCCO, Mat.PLASTER);
         windows(w, se, 5, se.length() - 5, 7, new double[]{se.at(94, c), se.at(61, c), se.at(32.4, c)});
         Walls.build(mb, w);
-        // West (außen = -x) und Ost (außen = +x), zwischen den Innenflächen der Nord- und Südmauer
-        Line we = new Line(-cx, -52.5, -cx, 52.5);
+        // West (außen = -x) und Ost (außen = +x), schließt an die Ecken der Nord- und Südmauer an
+        Line we = new Line(-cx, -BZ, -cx, BZ);
         w = new Wall(we, T_PER, 0, H_PER, Mat.STUCCO, Mat.PLASTER);
-        windows(w, we, 5, we.length() - 5, 7.2, new double[]{we.at(-cx, -40), we.at(-cx, 40)});
+        windows(w, we, 7.5, we.length() - 7.5, 7.2, new double[]{we.at(-cx, -40), we.at(-cx, 40)});
         Walls.build(mb, w);
-        Line ea = new Line(cx, 52.5, cx, -52.5);
+        Line ea = new Line(cx, BZ, cx, -BZ);
         w = new Wall(ea, T_PER, 0, H_PER, Mat.STUCCO, Mat.PLASTER);
-        windows(w, ea, 5, ea.length() - 5, 7.2, new double[]{ea.at(cx, -40), ea.at(cx, 40)});
+        windows(w, ea, 7.5, ea.length() - 7.5, 7.2, new double[]{ea.at(cx, -40), ea.at(cx, 40)});
         Walls.build(mb, w);
         // Kranzgesims außen
         mb.box(-BX - 0.5, H_PER - 0.9, -BZ - 0.5, BX + 0.5, H_PER - 0.3, -BZ, Mat.CORNICE, true);
@@ -549,7 +549,7 @@ public final class ThermenModel {
 
     private static void precinct(MeshBuilder mb) {
         mb.maxEdge = 4;
-        Line n = new Line(-PX, PZ0, PX, PZ0);
+        Line n = new Line(-PX - 1.5, PZ0, PX + 1.5, PZ0);
         Wall w = new Wall(n, 3, 0, 10, Mat.STUCCO, Mat.STUCCO);
         for (double x = -160; x <= 160; x += 7) {
             if (Math.abs(x) < 9) continue;
@@ -557,10 +557,10 @@ public final class ThermenModel {
         }
         w.add(Opening.arch(n.at(0, PZ0), 8, 0, 8.5));
         Walls.build(mb, w);
-        Walls.build(mb, new Wall(new Line(PX, PZ1, -PX, PZ1), 3, 0, 10, Mat.STUCCO, Mat.STUCCO));
+        Walls.build(mb, new Wall(new Line(PX + 1.5, PZ1, -PX - 1.5, PZ1), 3, 0, 10, Mat.STUCCO, Mat.STUCCO));
         int v0 = mb.vertexCount(), t0 = mb.triCount();
-        Walls.build(mb, new Wall(new Line(-PX, PZ1, -PX, 46), 3, 0, 10, Mat.STUCCO, Mat.STUCCO));
-        Walls.build(mb, new Wall(new Line(-PX, -18, -PX, PZ0), 3, 0, 10, Mat.STUCCO, Mat.STUCCO));
+        Walls.build(mb, new Wall(new Line(-PX, PZ1 + 1.5, -PX, 46), 3, 0, 10, Mat.STUCCO, Mat.STUCCO));
+        Walls.build(mb, new Wall(new Line(-PX, -18, -PX, PZ0 - 1.5), 3, 0, 10, Mat.STUCCO, Mat.STUCCO));
         Arc ex = new Arc(-PX, 14, 32, 90, 270, true);
         w = new Wall(ex, 3, 0, 12, Mat.STUCCO, Mat.STUCCO);
         for (double deg = 105; deg <= 255; deg += 15) w.add(Opening.niche(ex.atDeg(deg), 3.6, 1, 7.5, 1.6, Mat.PLASTER));
