@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://cc60475b-5dce-48c9-8f61-45b8e9b7640d.frame.claudeusercontent.com/_f/1790304506-6151/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.Kiow93e4.js","assets":"assets.DOAjpBS9.js","comments":"comments.DrhK3r8W.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.DcZf-TSv.js","endpoints":"endpoints.BPfoKaE1.js","files":"files.IkpCjcgM.js","mcp":"mcp.C8qKIFvQ.js","network":"network.B5UA9Su4.js","permissions":"permissions.DWFFeHI0.js","room":"room.DRL7voHn.js","sample":"sample.DZwWAZDd.js","self":"artifact.Kiow93e4.js","user":"user.CB0zJsP2.js"},"transforms":"_transforms.CkRgqq9F.js","comments":"_comments.DUaNQZcg.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.B4FSryPi.js"}                                </script><script>(function(){"use strict";function lr(t){return t==="cookie"||t==="query"?t:void 0}var Gn=3e5;function cr(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var ur=["light","dark","system"],fr=/^[A-Za-z0-9_-]{1,64}$/,Rt=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,dr=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function hr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||dr.has(e)}var Tt="data-ldx-props";function pr(t,e){if(e.toLowerCase()===Tt)return!0;const r=t.getAttribute(Tt);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var zn="http://www.w3.org/1999/xhtml",mr="http://www.w3.org/2000/svg",vr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),_r=new Set(["script","style"]);function yr(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!vr.has(e):t.namespaceURI===mr?!_r.has(e):!1}function Ze(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function gr(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&Ze(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&Ze(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function wr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:c,s:d}=gr(n,e);c===a&&d===0&&a===s||r.replaceData(c,a-c-d,e.slice(c,s-d));const L=r.data,E=t.ownerDocument.getSelection?.()??null,w=E!==null&&E.rangeCount>0&&(E.anchorNode===r||E.focusNode===r)?{anchor:E.anchorNode,anchorOffset:E.anchorOffset,focus:E.focusNode,focusOffset:E.focusOffset}:null;let m=-1,k=-1;for(let h=0;h<L.length&&h<e.length;h++){const p=L.charCodeAt(h),x=e.charCodeAt(h);p!==x&&Ze(p,x)&&(m<0&&(m=h),k=h)}const O=m>=0;if(O&&r.replaceData(m,k-m+1,e.slice(m,k+1)),O&&w!==null&&w.anchor!==null&&w.focus!==null)try{E.setBaseAndExtent(w.anchor,w.anchorOffset,w.focus,w.focusOffset)}catch{}}var br=new Set(["html","head","body","frameset"]);function Er(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&br.has(t.localName)}function Sr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!fr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!Rt.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!Rt.test(r))return!1}return!0}function Ar(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function kr(t){return t===null||typeof t!="object"?!1:Ar(t.__frame_patch,Sr)}function Rr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function Tr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Lr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Or(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&ur.includes(r)}var Pr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Mr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Nr(t){return typeof t=="string"&&Mr.includes(t)?t:"other"}var Cr=Object.freeze({until:null,now:!1}),jr="__claude_hot",Fr="__claude_hot_in",Ir=/^__claude_hot(?:_in)?(?::|$)/,Lt=/^[0-9a-z]{1,32}$/,Qe=t=>t===void 0?jr:"__claude_hot:"+t,Ae=t=>t===void 0?Fr:"__claude_hot_in:"+t;function xr(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&Ir.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Dr(t){let e=null;try{e=B(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Lt.test(e.k)?null:ue(e.g)?{k:e.k,g:e.g}:{k:e.k}}var $n=262144,Hr=3e3,qr=5e3,Ot=/^[a-z0-9._:-]{1,64}$/,Br=["none","hot-restart","hard-reload"],Ur=["asset","doc","added","removed"],Kr=1500,Gr=/^[0-9a-f]{64}$/;function B(t){return t!==null&&typeof t=="object"?t:null}function ue(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Pt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function zr(t){return t===void 0||typeof t=="string"&&Ot.test(t)}function Mt(t){const e=B(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function et(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Pt(e.seq)&&typeof e.handoff=="string"&&Pr.includes(e.handoff)&&zr(e.note)}function Nt(t){const e=B(t);return e!==null&&ue(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||et(e.from))}function $r(t){const e=B(t);return e!==null&&e.kv===1&&ue(e.gen)&&et(e.from)&&Object.hasOwn(e,"data")}function Wr(t){const e=B(t);return e!==null&&e.__frame_hot_snapshot===!0&&ue(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Mt(e.deadline))&&Pt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Vr(t){const e=B(t);return e!==null&&e.__frame_hot_start===!0&&ue(e.gen)&&et(e.from)}function Xr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Ct(t){return B(t)!==null&&!Array.isArray(t)}function Yr(t){const e=B(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Xr(e.ver)&&(e.grant===void 0||Ct(e.grant))&&(e.budgets===void 0||Ct(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||ue(e.brokerGen))}function Jr(t){const e=B(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||ue(e.brokerGen))}function jt(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function Ft(t){if(t==null||typeof t=="string")return!0;const e=B(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Zr(t){const e=B(t);return e!==null&&typeof e.path=="string"&&Ur.includes(e.kind)&&Ft(e.from)&&Ft(e.to)}function Qr(t){return t===null?null:Object.freeze(t.filter(Zr))}function en(t){const e=B(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&jt(e.from)&&jt(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Br.includes(e.required)&&Mt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Gr.test(e.preflight))}var fe=/^[\w.-]+\.js$/;function tn(t,e,r){return r?"inert":typeof e=="string"&&fe.test(e)?t?[e]:"inert":t?"inert":"framed"}var It=Object.freeze({[Symbol("claude.hot.restart")]:!0});function xt(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=Qe(e?.k),a=Ae(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{xr(r,a)}catch{}let c=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const d=JSON.parse(s);$r(d)&&(e===null||d.gen===e.g)&&(c=d)}catch{}if(c===null)try{r.removeItem(a)}catch{}return c}function Dt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var rn=/^[^/\\?#]{1,128}$/,Ht=t=>rn.test(t)&&t!=="."&&t!=="..";function qt(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!Ht(r))return null;const s=n.search.slice(1).split("&").filter(c=>!/^__frame_t(?:=|$)/.test(c)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var De="{}";function ke(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Bt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function Ut(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function nn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,c=queueMicrotask,d=performance.now.bind(performance),L=new TextEncoder;let E=null,w=null;try{E=history,w=E.replaceState.bind(E)}catch{}const m=(...o)=>{try{console.warn(...o)}catch{}};let k=Dt(),O=null;try{O=sessionStorage}catch{}const h={storage:O,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:k,key:n?.k};let p=n?.k;const x=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(d()),16);let y=e?.data??{},F=ke(e?.from),P=e?.gen??0,D=e!==null,$=!1,Q=!1,X=null,Oe=!1;const Pe=new AbortController;let Me=null,H=null,ve=null,Ke=!1,le=()=>{};const l=new Promise(o=>{le=o});let b=!1,g=!1,C=!1,N,j=null,W=!1,re=!1,Y=!1,Ne=!1,ee=!1,_e=!1;const Ce=o=>{for(const u of[Qe(o),Ae(o)])try{O?.removeItem(u)}catch{}},K=(o,u)=>{try{u!==null&&r.post(o,u)}catch{}},je=()=>ee||=Y&&(H===null||Ne),q=()=>{const o={__frame_hot:!0,ready:H!==null,accept:ve!==null,demand:!0};_e=!ee,_e&&(o.booting=!0),b&&(o.readData=!0),C&&(o.threw=!0),j?.assess&&(o.preflight=!0),K(o,X)};let Fe=!1,Ie=!1,ce=!1,Ge=!1;const ze=()=>{Fe||!Oe||ce||(Fe=!0,K({__frame_reveal_hold:!0},"*"))},ne=()=>new Promise(o=>{let u,f=0;const S=I=>{if(u===void 0)u=I;else if(I!==u||++f>=8){o();return}try{x(S)}catch{o()}};try{x(S)}catch{o()}}),ye=()=>{ce=!0,K({__frame_reveal_ready:!0},"*")},ge=o=>{Ie||(Ie=!0,o.then(u=>{if(u===!1)return;let f=null;try{f=j?.settle?.()??null}catch{}return(f===null?ne():new Promise(S=>{a(S,50),Promise.resolve(f).then(S,S)}).then(ne)).then(ye)}))},$e=()=>{if(Ge||!ce)return;Ge=!0;const o=()=>{try{j?.afterReveal?.()}catch{}};o(),ne().then(()=>{o(),ye()})},i=(o=!1)=>{if(Ke||H===null||!D||!Q)return;Ke=!0;const u=H,f=y;c(()=>{let S;try{S=u(f)}catch(U){throw le(!1),U}let I=!1;try{I=typeof S?.then=="function"}catch{}if(!I){le(!0);return}Promise.resolve(S).then(()=>le(!0),U=>{le(!1),c(()=>{throw U})})}),ge(o?l:r.dcl.then(()=>l))},v=o=>typeof o=="string"&&Ot.test(o)?o:void 0,_=o=>{const u={__frame_hot_restart:!0},f=v(o?.note);f!==void 0&&(u.note=f),o?.required==="hard-reload"&&(u.required="hard-reload"),K(u,X)},R=Object.freeze({get data(){return Q||(g=!0),!D&&!b&&(b=!0,Q&&q()),y},get from(){return F},get gen(){return P},signal:Pe.signal,snapshot(o){typeof o=="function"&&(Me=o)},ready(o){typeof o!="function"||H!==null||(H=o,ze(),q(),$&&K({__frame_hot_ready:!0,gen:P},X),i())},accept(o){typeof o=="function"&&(ve=o,q())},restart(o){const u={note:o?.note,required:o?.required};if(Q){_(u);return}const f=N;N={note:v(f?.note)??u.note,required:f?.required==="hard-reload"||u.required==="hard-reload"?"hard-reload":void 0}}});let G=null,J=()=>{};const he=new Promise(o=>{J=o});let xn=null;const rr=()=>xn??=r.dcl.then(()=>{let o=!1;try{o=G!==null&&G.expect()}catch{}if(!o)return;const u=G.maxMs;return new Promise(f=>{he.then(f),a(f,u)})}),nr=()=>{if(!W||re||j===null)return;re=!0;const o=j;rr().then(()=>{try{ce||o.afterStart(Ut(e),!1)}catch{}})},or=o=>{e!==null&&g&&(b=!0),y={},F=null,P=0;try{O?.removeItem(Ae(n?.k))}catch{}e!==null&&!o&&ge(r.dcl.then(()=>H!==null?l:void 0))},Dn=()=>{W=!0,ge(rr().then(()=>H!==null?l:void 0)),nr()};try{addEventListener("error",()=>{C||H!==null||(C=!0,q())})}catch{}const ar=()=>{a(()=>{!ee&&je()&&_e&&q()},0)};try{Y=document.readyState==="complete",Y||addEventListener("load",()=>{Y=!0,ar()},{once:!0})}catch{Y=!0}je(),l.then(()=>{Ne=!0,ar()});let pe=-1,vt,_t,xe=!0,yt=!1,gt,We=null;const wt=o=>{const u=We===null;We=xe&&o[0]!=="withheld"?o:["withheld",o[1],De];let f=o[0];if(xe&&f!=="withheld"){const I={ver:k,handoff:f};vt!==void 0&&(I.seq=vt),_t!==void 0&&(I.note=_t);try{if(O===null)throw new Error("no storage");O.setItem(Qe(p),'{"kv":1,"gen":'+pe+',"from":'+JSON.stringify(I)+(gt!==void 0?',"k":'+JSON.stringify(gt):"")+',"data":'+(f==="ok"?o[2]:De)+"}")}catch{f="unavailable"}}else{f="withheld",Ce(p);try{j?.release?.()}catch{}}const S={__frame_hot_snapshotted:!0,gen:pe,handoff:f,bytes:o[1]};o[3]!==void 0&&(S.errName=o[3]),K(S,X),u&&(f==="snapshot_error"||f==="unclonable"||f==="oversize")&&m("claude.hot: snapshot",f,o[3])},we=o=>{try{return Nr(o?.name)}catch{return"other"}},be=(o,u,f=0)=>wt(u===void 0?[o,f,De]:[o,f,De,we(u)]),Hn=o=>{if(o.gen<=pe)return;const u=pe>=0;if(pe=o.gen,vt=o.seq,_t=v(o.note),typeof o.key=="string"&&Lt.test(o.key)&&o.key!==p&&(Ce(p),p=o.key),xe&&=o.handoff!==!1,u){We!==null?wt(We):yt&&K({__frame_hot_held:!0,gen:pe},X);return}Pe.abort();const f=Object.freeze({handoff:xe,timeoutMs:o.timeoutMs,deadline:o.deadline??Cr}),S=Me,I=()=>{if(xe)try{gt=j?.capture()}catch{}if(S===null){be("empty");return}let T=!1;const z=a(()=>{T||(T=!0,be("snapshot_timeout"))},Math.max(0,f.timeoutMs));Promise.resolve().then(()=>S(f)).then(Ee=>{if(T)return;T=!0,s(z);let oe;try{oe=JSON.stringify(Ee)}catch(bt){be("unclonable",bt);return}if(typeof oe!="string"){be("unclonable");return}let ae=oe.length;try{ae=L.encode(oe).length}catch{}if(ae>262144){be("oversize",void 0,ae);return}wt(["ok",ae,oe])},Ee=>{T||(T=!0,s(z),be("snapshot_error",Ee))})};let U=null;try{U=j?.holdForIme()??null}catch{}if(U===null)I();else{yt=!0,K({__frame_hot_held:!0,gen:pe},X);const T=()=>{yt=!1,I()};U.then(T,T)}},qn=o=>{if(!$||D||H===null||o.gen!==P)return;let u=null;try{u=xt(O,n&&{k:n.k,g:o.gen})}catch{}if(u!==null&&u.gen!==o.gen){u=null;try{O?.removeItem(Ae(n?.k))}catch{}}y=u?.data??{},F=Bt(ke(u?.from??o.from),ke(o.from)),u!==null&&(P=u.gen),D=!0,$=!1;const f=Ut(u);l.then(S=>{try{S&&j?.afterStart(f,!0)}catch{}}),i(!0)};let Ve=0;const Bn=o=>{const u=ve;if(u===null||o.id<=Ve)return;Ve=o.id;const f=j?.assess;if(o.preflight===void 0||f===void 0){sr(o,u);return}let S=!1;const I=z=>{S||(S=!0,s(T),o.id===Ve&&sr(o,u,z))},U=()=>I(f.timeout(o)),T=a(U,Kr+100);f.run(o,window).then(I,U)},sr=(o,u,f)=>{let S,I=!1,U=!1,T,z,Ee=null;const oe=A=>{if(U)return!1;if(T!==void 0&&T!==A)return m(`claude.hot: u.${A}() ignored - u.${T}() was called first`),!1;const te=T===void 0;return T=A,te},ae=A=>{T="restart",m(`claude.hot: ${A} - restarting`)},bt=()=>{if(!oe("adopt")||o.id!==Ve)return;const A=o.to.ver;if(Xe.required!=="none"){ae(`u.adopt() needs required 'none', it is '${Xe.required}'`);return}if(!Ht(A)){ae("u.adopt() cannot address this version");return}if(!k||A===k)return;const te=k,Z=h.entry;let Ye="",St,Se=null,Je;try{Ye=location.href,St=E.state,Se=qt(Ye,te,A),Se!==null&&(w(St,"",Se),location.pathname.startsWith("/_f/"+A+"/")?Se=location.href:Je="navigate event canceled")}catch(kt){Je=we(kt)}if(Je!==void 0){z="adopt_failed",ae(`adopt_failed ${Je}; URL not changed`);return}Se===null?(z="adopt_skipped",m(`claude.hot: adopt_skipped - page already left /_f/${te}/; URL not changed, update still applied`)):z="adopted",k=h.ver=A;try{h.entry=qt(Z,te,A)??Z}catch{}const At=Se;Ee=()=>{if(k===A){if(At!==null)try{if(location.href!==At)m("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(w(St,"",Ye),location.href!==Ye){m("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",m("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(kt){m(`claude.hot: adopt_revert_failed ${we(kt)} - URL still at the new version`);return}k=h.ver=te,h.entry=Z,At===null&&(z=void 0)}}},Xe=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:Qr(o.changed),required:o.required,deadline:o.deadline,adopt:bt,defer(){return oe("defer")&&Xe.deadline.now&&ae("u.defer() past the deadline"),It},restart(A){return oe("restart"),T==="restart"&&!U&&(S??=v(A?.note),I||=A?.required==="hard-reload"),It},...f?.update}),Un=(A,te)=>{U=!0,A==="threw"?(Ee?.(),S??=we(te).toLowerCase()):T===void 0&&m(A==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const Z={__frame_hot_verdict:!0,id:o.id};Z.verdict=A==="threw"||T===void 0||T==="restart"?"restart":T==="adopt"?"applied":"deferred",Z.verdict==="restart"&&(I&&(Z.required="hard-reload"),S!==void 0&&(Z.note=S)),z!==void 0&&(Z.verdict==="applied"||z!=="adopted")&&(Z.adopt=z),K(Object.assign(Z,f?.verdict),X)};let ir=!1;const Et=(A,te)=>ir?!1:(ir=!0,s(Kn),Un(A,te),!0),Kn=a(()=>Et("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>u(Xe)).then(()=>Et("settled"),A=>{!Et("threw",A)&&T==="adopt"&&_({note:we(A).toLowerCase()}),m("claude.hot: accept",we(A))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:R,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:R,boot:h,afterConnect(){Oe=!0,(e!==null||H!==null)&&ze()},onInit(o,u){X=u,Q=!0;const f=Nt(o)?o:null;f?.phase==="final"&&e!==null&&e.gen===f.gen?(D=!0,F=Bt(F,ke(f.from)),Dn()):($=f?.phase==="pending",or($),D=!$,P=f?.gen??0,F=ke(f?.from)),q(),_e&&a(()=>{ee||(ee=!0,q())},qr),$&&H!==null&&K({__frame_hot_ready:!0,gen:P},u),N!==void 0&&(_(N),N=void 0),i()},onNoInit(){Q=!0,or(!1),D=!0,i()},onShell(o){return o?.__frame_revealed===!0?($e(),!1):Wr(o)?(Hn(o),!0):Vr(o)?(qn(o),!0):en(o)?(Bn(o),!0):!1},attachExtras(o){j=o,nr(),o.assess&&q()},inSlot:()=>Ae(p),hydration(o,u){G??={expect:o,maxMs:u}},hydrated(){J()},carried(){return D?y:{}},presented:()=>ce}}var Wn="frame_ldx_runtime",on="frame_ldx_build",Vn="script#an-form",an=256;function Kt(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=an&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function tt(t,e,r){try{const n=t[e];if(typeof n!="function")return;t[e]=function(...a){const s=n.apply(this,a);try{r(this)}catch{}return s}}catch{}}var rt;function sn(){if(rt)return rt;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};rt=t;const e=window.HTMLMediaElement?.prototype;e&&(tt(e,"play",a=>{Kt(t.media,a,s=>s.paused),t.onStart?.(a)}),tt(e,"pause",a=>t.onPause?.(a)));const r=window.AudioContext,n=window.AudioNode?.prototype;return r&&n&&tt(n,"connect",a=>{const s=a.context;s instanceof r&&(Kt(t.contexts,s,c=>c.state==="closed"),t.onStart?.(s))}),t}function ln(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function cn(){let t=null;const e=()=>t??parent,r=n=>t?n===t:ln(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let c=0;c<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));c++)s=s.parent},on(n){const a=s=>{const c=s.source;r(c)&&n(s.data,s.origin,s.isTrusted,()=>{t??=c})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const c=d=>{r(d.source)&&d.origin===n&&a(d.data,d)};return addEventListener("message",c,s),()=>removeEventListener("message",c,s)}})}}function un(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var fn=500,dn=2e4,hn="data-token-reads",pn="data-frame-refused-watch",mn="data-frame-unsupported",vn=/(?:^|\s)stylesheet(?:\s|$)/i;function _n(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&vn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function yn(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(pn,"");const a=location.href,s=fetch,c=setTimeout,d={method:"HEAD",cache:"no-store",credentials:"same-origin"},L=h=>h.ok||h.status===304;let E=!1,w=!1;const m=()=>removeEventListener("error",O,!0),k=async h=>{const p=await s(h,d);if(L(p))w=!0;else if(p.status===403){const x=await s(a,d);if(L(x)){const y=(await s(h,d)).status;y===403?(w=!0,document.documentElement.setAttribute(mn,""),r()):y<500&&(w=!0)}else x.status>=400&&x.status<500&&(w=!0)}},O=h=>{if(w||E)return;if(document.documentElement.hasAttribute(hn)){w=!0,m();return}const p=_n(h.target,n);p&&(E=!0,c(()=>{k(p).catch(()=>{}).finally(()=>{E=!1,w&&m()})},fn))};addEventListener("error",O,!0),addEventListener("load",m,{once:!0}),c(m,dn)}var nt="__frame_scroll",gn=150,wn=310,bn=160,En=3e4;function Sn(){let t=0,e=!1,r=!1,n=!1,a=0,s=null;const c=y=>{try{sessionStorage.setItem(nt,JSON.stringify({y}))}catch{}},d=()=>{if(clearTimeout(t),s===null)return;const y=s;s=null,c(y)},L=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(d,gn)};try{addEventListener("scroll",L,{passive:!0}),addEventListener("pagehide",d)}catch{}const E=()=>{let y;try{y=sessionStorage.getItem(nt)}catch{return null}if(y===null)return null;let F;try{F=JSON.parse(y)}catch{F=null}const P=F?.y;if(!(typeof P=="number"&&Number.isFinite(P)&&P>=0)){try{sessionStorage.removeItem(nt)}catch{}return null}return P};let w=!1;const m=y=>{try{const F=scrollY;scrollTo({top:y,left:0,behavior:"instant"}),a=y,n=!0,clearTimeout(t),s=null,c(y);const P=scrollY;P!==F&&(e=!0),P!==y&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===P){const D=E();m(D!==null?D:a)}}catch{}},{once:!0}))}catch{}},k=()=>{try{return!!location.hash}catch{return!0}};let O=!1;const h=()=>{try{if(O||innerWidth>wn||innerHeight>bn)return;O=!0;const y=Date.now(),F=()=>{try{removeEventListener("resize",F)}catch{}if(Date.now()-y>En||r||k())return;const P=E();m(P!==null?P:a)};addEventListener("resize",F)}catch{}};let p=!1,x=!1;return{restore(){if(p||(p=!0,k()))return;const y=E();y!==null&&(m(y),h())},promoted(){if(x||(x=!0,k()))return;const y=E();y!==null?(m(y),h()):n&&m(a)}}}function An(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:L=>L})??null}catch{}const s=window.Worker,c=s?.prototype,d=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(L=>L?.bootTopLevel?L.bootTopLevel(d,n):n.settle()).catch(()=>n.settle())}var Xn="modulepreload",Yn=function(t){return"/"+t},Jn={},kn=function(e,r,n){let a=Promise.resolve();function s(c){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=c,window.dispatchEvent(d),!d.defaultPrevented)throw c}return a.then(c=>{for(const d of c||[])d.status==="rejected"&&s(d.reason);return e().catch(s)})},Rn=window===top,Gt=Object.getOwnPropertyDescriptor(window,"claude"),He=tn(Rn,window.__FRAME_PREAMBLE?.topLevel,Gt?.writable===!1),ot=typeof He=="object"&&He[0],M=ot?un():cn();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&He==="framed")try{M.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var zt=1e4,Tn=2e3,at=2e3,st=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function $t(t){for(const e of st)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Re=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Te=window.__FRAME_PREAMBLE?.transforms,it=window.__FRAME_PREAMBLE?.comments,lt=window.__FRAME_PREAMBLE?.translate,de=window.__FRAME_PREAMBLE?.ldx,ct=lr(window.__FRAME_PREAMBLE?.cred);function Wt(t){return kn(()=>import("/_runtime/"+t),void 0)}var Le=new Set,Vt=setTimeout,Ln=fetch,On=AbortController,Pn=800+800*Math.random(),Mn=3e3,qe=null,Xt=new Map;function Nn(t,e){let r=Xt.get(t);return r||Xt.set(t,r=Cn(t,e)),r}function Cn(t,e){if(qe?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new On;let n=!1;return Vt(()=>{n=!0,r.abort()},Mn),Ln("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":qe?.has(t)?"csp":"net")}function se(t){if(!qe){const e=qe=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Wt(t).catch(()=>new Promise(e=>Vt(e,Pn)).then(()=>Wt(t+"?r=1")).then(e=>(e!==void 0&&Le.add(t),e)))}function Yt(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:mt,hooks:Be,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(c){return Promise.reject(c)}}})}}var me=null,V=null;function Jt(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var ut=!1,Be={editBefore:null,edit:null};function jn(t,e,r=!1){const n=[];let a;if(r)try{Be.editBefore?.(t)}catch{}for(const s of t.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(d=>!hr(d)||pr(c,d))){a=s.target;break}if(s.text!==void 0&&(!yr(c)||Er(c))){a=s.target;break}for(const[d,L]of Object.entries(s.attrsSet??{}))if(!Qt(c,d)){try{c.setAttribute(d,L)}catch{}Zt(c,d,L)}for(const d of s.attrsRemoved??[])Qt(c,d)||(c.removeAttribute(d),Zt(c,d,null));typeof s.text=="string"&&wr(c,s.text),n.push(s.target)}if(r)try{Be.edit?.(t.seq,n,a)}catch{}if(a!==void 0){M.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function Zt(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function Qt(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function er(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,ut=!0):ut&&(delete e.dataset.theme,e.style.colorScheme="",ut=!1)}var ie=new Map,ft=null;function dt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function Ue(t,e){t.nulled=!0,t.ver=e,t.r(null)}function ht(t,e){for(const[r,n]of ie)n.done||(e&&n.asked?e(r,n):Ue(n,t))}function Fn(){for(const t of ie.values())if(t.asked&&!t.done)return!0;return!1}var In=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),pt=!1,mt=(t,e)=>{let r=ie.get(t);if(r?.nulled&&pt)r=dt(),ie.set(t,r);else if(!r||r.done){r?.nulled&&V&&M.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},V);return}const n=typeof e=="function"?Object.setPrototypeOf(e,In):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function tr(){const t=Gt?.value??{};Jt(window,"claude",t);for(const e of Object.keys(Re)){if(t[e]!==void 0){Jt(t,e,t[e]);continue}ie.set(e,dt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Re,r))return Promise.resolve(null);let n=ie.get(r);return n?(ft&&(n.nulled||n.want!==void 0)&&(n=ft(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(He==="framed"){let t;const e=Te&&fe.test(Te)?se(Te).catch(l=>{t={f:Te,e:l}}):Promise.resolve(void 0),r=l=>{if(l.type==="auxclick"&&l.button!==1)return;const b=l.target,g=b&&b.closest?b.closest("a[href],area[href]"):null;if(!g)return;const C=g.getAttribute("href");if(!C)return;let N;try{N=new URL(C,document.baseURI)}catch{return}if((N.protocol==="http:"||N.protocol==="https:")&&N.origin!==location.origin){l.preventDefault();const j=(g.getAttribute("target")??"").toLowerCase(),W=l.type==="auxclick"||l.metaKey||l.ctrlKey||l.shiftKey||l.altKey||!["","_self","_top","_parent"].includes(j);M.post({__frame_nav:!0,url:N.href,newTab:W},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=l=>{l.isTrusted&&(n.pointer=!0)},s=l=>{l.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const c={cb:null};addEventListener("keydown",l=>c.cb?.(l),!0);const d={cb:null};addEventListener("keydown",l=>d.cb?.(l));const L=sn();e.then(l=>l?.installEscapeForward?.(c,b=>{V&&M.post(b,V)})),e.then(l=>{try{l?.installFocusKeep?.()}catch{}}),e.then(l=>{if(!l?.wireNav)return;const b=M.port("*");l.wireNav(b),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),l.wireEngagement?.(n,b,L)});let E=null;try{E=Sn()}catch{}const w=document.readyState==="loading"?new Promise(l=>document.addEventListener("DOMContentLoaded",()=>l(),{once:!0})):Promise.resolve();let m=null,k=null;try{k=Dr(window.name),m=xt(null,k)}catch{}const O=tr();let h=null;try{h=nn(O,m,{post:(l,b)=>M.post(l,b),dcl:w},k)}catch{}e.then(l=>{try{h&&l?.installHotExtras?.(h)}catch{}});let p=null;const x=()=>Array.isArray(p?.flags)&&p.flags.includes("frame_ldx_runtime")&&!!de&&fe.test(de)&&document.querySelector("script#an-form")!==null;try{h?.hydration(x,Hr)}catch{}let y=null,F=0;const P=M.on((l,b,g,C)=>{$t(b)&&Rr(l)&&(C(),p=l.__frame_init,V=b,P(),clearTimeout(F),y?.())});if(ct)for(const l of st)try{l.endsWith(":*")||M.post({__frame_cred:ct},l)}catch{}M.post({__frame_connect:!0},"*");try{h?.afterConnect()}catch{}const D=setTimeout,$=clearTimeout;let Q=()=>NaN,X=()=>[];try{Q=performance.now.bind(performance),X=performance.getEntriesByType.bind(performance)}catch{}let Oe=0;const Pe=()=>{try{M.post({__frame_alive:!0},"*")}catch{}Oe=D(Pe,Tn)},Me=()=>$(Oe);Pe(),addEventListener("load",Me,{once:!0});const H=new Promise(l=>{y=l,F=setTimeout(()=>{P(),l()},zt)}),ve=new WeakSet;addEventListener("error",l=>{l.target&&ve.add(l.target)},!0);try{yn(Dt(),ct,()=>{e.then(l=>{try{l?.drawRefusedNotice?.()}catch{}})})}catch{}const Ke=()=>{let l=[];try{l=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(g=>!g.sheet&&!g.disabled&&!ve.has(g)&&g.getAttribute("href")&&URL.canParse(g.href)&&(!g.media||matchMedia(g.media).matches))}catch{}let b=l.length;return b===0?Promise.resolve():new Promise(g=>{try{const C=at-Q(),N=D(g,C>0?C<at?C:at:0),j=()=>{--b===0&&($(N),g())};for(const W of l)W.addEventListener("load",j,{once:!0}),W.addEventListener("error",j,{once:!0})}catch{g()}})};w.then(()=>{try{E?.restore()}catch{}}),Promise.all([H,w,e]).then(([,,l])=>{if(p?.hostOverlays!==!0||!V)return;let b=!1;try{b=l?.declaresCover?.()===!0}catch{}M.post({__frame_layout:{cover:b}},V)});const le={cb:null};M.on((l,b)=>{if($t(b)&&Tr(l)){try{E?.promoted()}catch{}le.cb?.()}}),H.then(async()=>{if(!p||!V){ht();try{h?.onNoInit()}catch{}return}if(er(p.theme),p.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,L)),p.hostKeys!==void 0){const i=V,v=p.hostKeys;e.then(_=>_?.installHostKeyForward?.(d,v,R=>M.post(R,i)))}try{h?.onInit(p.hot,V)}catch{}let l;const b=()=>{try{!l&&de&&x()&&(l=se(de),l.then(i=>i?.prefetch?.()).catch(()=>{}))}catch{}};b(),w.then(b);const g=V,C=M.port(g),N=(i,v)=>M.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:v}},g),j=(i,v,_)=>{new Promise(R=>R(Nn(v,_))).then(R=>N(i,R),()=>N(i))},W=i=>M.post({__frame_cap_recovered:{cap:i}},g);let re=p.brokerGen;const Y=()=>h?.boot.ver??"",Ne=Y(),ee=(i,v)=>{const _=Y();$(v.t),v.want=_,v.t=D(()=>{v.done||Ue(v,_)},zt),M.post({__frame_cap_want:!0,cap:i,ver:_},g)},_e=(i,v)=>{const _=ie.get(i.cap),R=Re[i.cap];if(!v||!_||_.done||_.want!==i.ver||!fe.test(R))return;if($(_.t),_.want=void 0,re=i.brokerGen??re,i.ver!==Y()){ee(i.cap,_);return}if(!i.grant||i.cap==="network"){Ue(_,i.ver);return}const G=me,J=me={...G,capabilities:{...G.capabilities,[i.cap]:i.grant},capBudgets:{...G.capBudgets,[i.cap]:{...G.capBudgets[i.cap],...i.budgets}}};se(R).then(he=>{Le.has(R)&&W(i.cap),J.brokerGen=re,pt=!0;try{he?.install?.(J)}catch{N(i.cap,"install")}finally{pt=!1}},he=>j(i.cap,R,he)).then(()=>{_.done||Ue(_,i.ver)})};let Ce=!1,K=!1;M.on((i,v,_)=>{if(v!==g)return;try{if(h?.onShell(i))return}catch{}if(Or(i)&&er(i.__frame_theme.theme),Yr(i)&&_e(i,_),_&&Jr(i)&&(re=i.brokerGen??re),Lr(i)){const J=i.__frame_host_visible.visible;e.then(he=>he?.applyHostVisible?.(J,L))}kr(i)&&jn(i.__frame_patch,g,_);const R=i?.__fc_mode;R&&typeof R=="object"&&!Ce&&it&&fe.test(it)&&(Ce=!0,se(it).then(J=>J.install?.(g,R.on===!0,C)).catch(()=>{}));const G=i?.__ft_cmd;G&&typeof G=="object"&&!K&&lt&&fe.test(lt)&&(K=!0,se(lt).then(J=>J.install?.(g,G,C)).catch(()=>{}))});const je=Object.keys(p.capabilities??{}).filter(i=>Object.hasOwn(Re,i)).map(i=>[i,Re[i]]).filter(i=>typeof i[1]=="string"&&fe.test(i[1])),q=g;let Fe=()=>{};const Ie=new Promise(i=>{Fe=i}),ce=m!==null||Nt(p.hot)||p.hostVisible===!1||p.hostOverlays===!0,Ge=w.then(()=>ce?Ie:new Promise(i=>D(i,0))).then(Ke).then(()=>{let i=!0;try{i=ce||Fn()}catch{}return i?Ie:void 0}).then(()=>{Me();const i=cr(X,Q);M.post(i?{__frame_ready:!0,nav:i}:{__frame_ready:!0},q),e.then(v=>{v?.installSizeReporter?.(q,le,C),v?.installPaintReporter?.(C)})}),ze=await Promise.allSettled(je.map(([,i])=>se(i))),ne=await e;if(ne?.buildBoot||(t?j("_transforms",t.f,t.e):N("_transforms")),ne?.buildBoot)try{me=ne.buildBoot(p,ne.TRANSFORMS??{},{shellOrigin:q,mount:mt,hooks:Be,shell:C},i=>M.post({__frame_cap_telemetry:i},q))}catch{N("_transforms","install"),me=Yt(p,q,C)}else me=Yt(p,q,C);ne?.buildBoot&&Le.has(Te??"")&&W("_transforms");const ye=me;ye.brokerGen=re,ze.forEach((i,v)=>{const[_,R]=je[v];if(i.status!=="fulfilled"){j(_,R,i.reason);return}Le.has(R)&&W(_);try{i.value?.install?.(ye)}catch{N(_,"install")}});const ge=p.capWants===!0;ge&&(ft=(i,v)=>{const _=Y();if(!_)return v;if(!v.nulled)return v.want!==_&&ee(i,v),v;if(_===v.ver)return v;const R=dt();return ie.set(i,R),ee(i,R),R}),ht(Ne,ge&&Y()!==Ne?ee:void 0),Fe(),await Ge;let $e=!1;try{$e=x()}catch{}de&&$e?(l??se(de)).then(i=>i?.boot?.({shellOrigin:g,build:ye.flags.has(on),hot:h?.hot??null,carried:h?.carried(),presented:()=>h?.presented()??!0})).catch(()=>!1).then(i=>{h?.hydrated(),i!==!0?N("_ldx"):Le.has(de)&&W("_ldx")}):h?.hydrated()})}else ot&&(tr(),An(ot,st,se,{settle:ht,mount:mt}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Caracalla Werkbuch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="./css2">
+<style>
+:root{
+  --bg:#ECEBEE; --panel:#F6F5F7; --ink:#1E1C23; --muted:#5D5966; --line:#CFCBD4;
+  --verde:#2E6B5E; --water:#1F7384; --sun:#A87A12; --porphyr:#7A2E3A; --stone:#8B8578;
+  --ok:#3F7D4E; --warn:#A96A12; --todo:#8B8578;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#121317; --panel:#1A1B20; --ink:#E9E6EE; --muted:#A29DAB; --line:#33323A;
+    --verde:#5FB39E; --water:#4DB3C6; --sun:#E3B54A; --porphyr:#D0697A; --stone:#9D968A;
+    --ok:#6DBB7F; --warn:#E3A948; --todo:#8A8490;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121317; --panel:#1A1B20; --ink:#E9E6EE; --muted:#A29DAB; --line:#33323A;
+  --verde:#5FB39E; --water:#4DB3C6; --sun:#E3B54A; --porphyr:#D0697A; --stone:#9D968A;
+  --ok:#6DBB7F; --warn:#E3A948; --todo:#8A8490;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 var(--body);padding:0 16px}
+.wrap{max-width:1060px;margin:0 auto;padding-block:28px 64px;display:flex;flex-direction:column;gap:48px}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(40px,7vw,76px);letter-spacing:.04em}
+h2{font-size:28px;letter-spacing:.05em;text-transform:uppercase;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+h2 small{font:500 12px var(--mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+h3{font-size:20px;letter-spacing:.03em}
+p{margin:0;max-width:68ch}
+a{color:var(--water)}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--verde)}
+.muted{color:var(--muted)}
+code,.mono{font-family:var(--mono);font-size:.88em}
+section{display:flex;flex-direction:column;gap:18px}
+:focus-visible{outline:2px solid var(--water);outline-offset:2px}
+
+.hero{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:end}
+.hero .txt{display:flex;flex-direction:column;gap:14px}
+.stage{position:relative;border-radius:4px;overflow:hidden;background:#0c0b0d;aspect-ratio:16/10;max-width:100%}
+.stage canvas{width:100%;height:100%;display:block}
+.stage .cap{position:absolute;left:12px;bottom:10px;font:500 11px var(--mono);color:#d8d0c2;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.facts{display:flex;flex-wrap:wrap;gap:6px 18px;font:13px var(--mono);color:var(--muted)}
+.facts b{color:var(--ink);font-weight:500}
+
+.strip{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
+.strip div{height:10px;border-radius:2px;background:var(--line)}
+.strip div.done{background:var(--ok)} .strip div.now{background:var(--sun)}
+.strip-lbl{display:flex;justify-content:space-between;font:12px var(--mono);color:var(--muted);flex-wrap:wrap;gap:6px}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.card .tag{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px}
+.card dt{font:500 11px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.card dd{margin:0}
+.card p{font-size:14px}
+
+.plan{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:14px;overflow-x:auto}
+.plan svg{display:block;width:100%;min-width:620px;height:auto}
+.plan text{font-family:var(--mono);font-size:3.3px;fill:var(--ink)}
+.plan .room{fill:var(--bg);stroke:var(--ink);stroke-width:.5}
+.plan .hot{fill:color-mix(in srgb,var(--porphyr) 22%,var(--bg))}
+.plan .warm{fill:color-mix(in srgb,var(--sun) 22%,var(--bg))}
+.plan .cold{fill:color-mix(in srgb,var(--water) 22%,var(--bg))}
+.plan .court{fill:color-mix(in srgb,var(--verde) 14%,var(--bg));stroke:var(--ink);stroke-width:.35;stroke-dasharray:1.2 .8}
+.plan .axis{stroke:var(--muted);stroke-width:.3;stroke-dasharray:2 1.2}
+.plan .ray{stroke:var(--sun);stroke-width:.5;opacity:.9}
+.plan .sm{font-size:2.6px;fill:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font:12px var(--mono);color:var(--muted)}
+.legend i{display:inline-block;width:11px;height:11px;border:1px solid var(--ink);vertical-align:-1px;margin-right:6px}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+td.q{font-weight:600;min-width:130px}
+td.n{font-family:var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.opt{display:block;margin-bottom:4px}
+.opt i{font-style:normal;font-family:var(--mono);font-weight:500;color:var(--muted);margin-right:6px}
+.opt.rec i{color:var(--verde)}
+.opt.rec{font-weight:500}
+.pill{display:inline-block;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.pill.open{color:var(--warn)} .pill.done{color:var(--ok)} .pill.todo{color:var(--todo)} .pill.now{color:var(--sun)}
+
+.phases{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
+.ph{display:grid;grid-template-columns:56px 1fr auto;gap:14px;padding:14px 16px;border-bottom:1px solid var(--line);align-items:start}
+.ph:last-child{border-bottom:0}
+.ph .n{font:400 30px var(--display);color:var(--stone);line-height:1}
+.ph.now .n{color:var(--sun)}
+.ph h3{margin-bottom:4px}
+.ph p{font-size:14px;color:var(--muted)}
+
+.log{display:flex;flex-direction:column;gap:8px;font-size:14px}
+.log div{display:grid;grid-template-columns:110px 1fr;gap:12px}
+.log time{font:13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.src{font-size:13px;color:var(--muted)}
+
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.gal figure{margin:0;display:flex;flex-direction:column;gap:6px}
+.gal img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--line);background:#0c0b0d}
+.gal figcaption{font:12px var(--mono);color:var(--muted)}
+@media (max-width:600px){.gal{grid-template-columns:1fr}}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .ph{grid-template-columns:40px 1fr}
+  .ph .pill{grid-column:2;justify-self:start}
+  .log div{grid-template-columns:1fr;gap:0}
+  .card dl{grid-template-columns:1fr;gap:0 0}
+  .card dd{margin-bottom:6px}
+}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="txt">
+    <span class="eyebrow">NetBeans-Projekt CaracalasTherme · Werkbuch</span>
+    <h1>Thermae Antoninianae</h1>
+    <p>Die Caracalla-Thermen in Rom als 3D-Rekonstruktion, so wie sie 216 n. Chr. eröffnet wurden: Marmor, Wasser, Dampf und Sonnenlicht, das in Strahlen durch die hohen Fenster in die dampfenden Hallen fällt. Die Kamera kreist frei, zoomt und fliegt durch die Säle. Dieses Werkbuch hält Ideen, Entscheidungen und Fortschritt fest.</p>
+    <div class="facts">
+      <span>JDK <b>21</b></span>
+      <span>lib <b>FStyle.jar · ojdbc11.jar</b></span>
+      <span>DB <b>PDBORCL / DEMO</b></span>
+      <span>Stand <b>25.09.2026 · alle Phasen geliefert</b></span>
+    </div>
+  </div>
+  <div class="stage" aria-label="Animierte Skizze: Lichtstrahlen fallen durch Fenster in eine dampfende Kuppelhalle mit Becken">
+    <canvas id="hero" width="675" height="422"></canvas>
+    <span class="cap">Stimmungsskizze Caldarium · kein Rendering aus dem Projekt</span>
+  </div>
+</header>
+
+<section>
+  <h2>Stand <small>alle neun Phasen geliefert</small></h2>
+  <div class="strip" aria-hidden="true">
+    <div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div><div class="done"></div>
+  </div>
+  <div class="strip-lbl"><span>0 Konzept</span><span>Bau</span><span>Stein</span><span>Licht</span><span>Wasser</span><span>Dampf</span><span>Regie</span><span>Zugaben</span><span>DB</span><span>9 Schliff</span></div>
+  <p>Alle zehn Entscheidungen sind gefallen, überall Vorschlag A. Phase 1 liegt im Projekt: Der Zentralbau steht als parametrisches Modell mit Frigidarium, Tepidarium, Caldarium, Natatio und beiden Palästren, dazu Park, Umfassung, Pinien und Hügel am Horizont. Die Sonne steht zu Datum und Uhrzeit richtig über Rom, Schatten fallen durch die Fenster. Die Kamera kreist außen frei mit Zoom und wechselt beim Hineinzoomen in die Innenkamera. <code>main.class</code> ist auf <code>com.dan.caracalla.CaracallaApp</code> gesetzt. Phase 2 hat den Stein gebracht: Kassettenkuppel mit Goldrosetten im Caldarium, Kassettenrelief in allen Gewölben, Wandverkleidung aus Pavonazzetto, Giallo antico und Verde antico, eigene Böden je Saal und 74 Statuen in den Nischen. Phase 3 hat das Licht gebracht: Sonnenstrahlen durch die Fenster, sichtbar im Dampf, Licht, das von Boden und Wänden zurückstrahlt, Überstrahlen heller Stellen, Zeitraffer und dunstiges Wetter. Phase 4 hat das Wasser belebt: Wellen je Becken, Spiegelung der Schauwand, Blick durchs Wasser auf den Boden mit tanzenden Lichtnetzen, ein Labrum mit Fontäne im Caldarium und zehn Wasserspeier. Ein Klick ins Wasser wirft einen Stein. Phase 5 hat den Dampf gebracht: Er steigt über den warmen Becken auf, sammelt sich unter der Kuppel und zieht durch die Fenster ab. Die Sonnenstrahlen leuchten darin auf, über den heißen Wannen flimmert die Luft, und morgens und abends liegt Nebel über der Natatio. Phase 6 hat die Regie gebracht: drei Kamerafahrten, einen Rundgang in der Badefolge mit Tafeln und das Drehbuch „Ein Tag in den Thermen“ mit Zeitleiste. Phase 7 hat die Zugaben gebracht: einen Schnitt durch den Zentralbau mit glühendem Hypokaustum, den Zeitregler zwischen 216 und heute, den Wasserweg vom Aquädukt bis ins Labrum, ein Wärmebild und synthetischen Klang mit Nachhall. Phase 8 hat die Datenbank gebaut: neun Tabellen <code>CAR_</code> mit Steinen, Steinbrüchen und ihren Wegen nach Rom, Baugeschichte, Sälen, Regie und gemerkten Blicken, dazu Steckbrief per Klick und Ereignisse am Zeitregler. Sie ist auf deinem Rechner eingerichtet und geprüft. Phase 9 hat den Schliff gebracht: Qualität Auto, Standbild, Kinomodus und eine Übersicht aller Tasten.</p>
+</section>
+
+<section id="phase9">
+  <h2>Phase 9 · Schliff <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p9_kino.jpg" alt="Kinomodus: Breitbild mit schwarzen Balken, darunter die Tafel „Rom, im Jahr 216“" loading="lazy"><figcaption>Kinomodus mit dem Drehbuch</figcaption></figure>
+    <figure><img src="./p9_standbild.jpg" alt="Standbild der Anlage in doppelter Auflösung" loading="lazy"><figcaption>Standbild, doppelt so groß gerechnet (verkleinert)</figcaption></figure>
+    <figure><img src="./p9_tasten.jpg" alt="Übersicht aller Tasten über der Szene" loading="lazy"><figcaption>F1 oder H: alle Tasten</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Was drin ist</span>
+      <dl>
+        <dt>Qualität Auto</dt><dd>Neue Grundeinstellung. Solange sich die Kamera bewegt, passt sich die Auflösung so an, dass das Bild flüssig bleibt; steht sie still, rechnet die App nach 0,7 s in voller Auflösung. Die festen Stufen gibt es weiter.</dd>
+        <dt>Standbild</dt><dd>Taste P oder Knopf im Abschnitt BILD: die Ansicht doppelt so groß (höchstens 3840 Pixel breit), ohne Hinweise, als PNG unter Bilder/Caracalla mit Datum und Uhrzeit im Namen.</dd>
+        <dt>Kinomodus</dt><dd>Taste K oder F11: Bedienfeld und Statuszeile verschwinden, Breitbild-Balken 2,39 : 1, bei Fahrten nur die Tafel schlicht im unteren Balken. Esc oder K holt alles zurück.</dd>
+        <dt>Tasten</dt><dd>F1 oder H blendet alle Tasten ein, nach Kamera, Regie, Zugaben und Bild geordnet.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Nebenbei behoben</span>
+      <dl>
+        <dt>Wetter</dt><dd>Der Wetter-Schalter folgt jetzt dem Dunst des Drehbuchs.</dd>
+        <dt>Klicks</dt><dd>Klicks beziehen sich immer auf das zuletzt gezeigte Bild, auch wenn sich die Auflösung gerade ändert.</dd>
+        <dt>Bilder/s</dt><dd>Die Anzeige in der Statuszeile zählt jetzt echte Zeit und war vorher bei langsamen Bildern zu hoch.</dd>
+        <dt>Projekt</dt><dd>51 Quelldateien im Projektordner, abgeglichen mit dem geprüften Stand.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="phase8">
+  <h2>Phase 8 · Datenbank <small>geliefert 25.09.2026 · eingerichtet und geprüft</small></h2>
+  <div class="gal">
+    <figure><img src="./p8_steckbrief.jpg" alt="Steckbrief des Lunensischen Marmors mit kleiner Karte des Wegs von Carrara nach Rom" loading="lazy"><figcaption>Klick auf eine Wand: Steckbrief mit Weg nach Rom (Testdaten)</figcaption></figure>
+    <figure><img src="./p8_geschichte.jpg" alt="Zeitregler auf heute: Tafel mit dem Ereignis 2019" loading="lazy"><figcaption>Zeitregler mit Ereignis der Baugeschichte (Testdaten)</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Gebaut</span>
+      <dl>
+        <dt>Skripte</dt><dd><code>db/01_tabellen.sql</code> (neun Tabellen, Spatial-Metadaten, räumliche Indizes, bricht ab, wenn schon <code>CAR_</code> da ist), <code>02_inhalte.sql</code> (6 Säle, 9 Steinbrüche mit Wegen, 9 Steine, 17 Zuordnungen, 22 Ereignisse mit Quelle), <code>03_regie.sql</code> (6 Fahrten, 26 Einstellungen, 230 Schlüsselbilder, erzeugt aus dem Code), <code>99_abbau.sql</code>.</dd>
+        <dt>Einrichter</dt><dd><code>db/DbSetup.java</code> führt die Skripte aus und macht den Durchstich: Zeilen zählen, Geometrien prüfen, Umkreissuche über den Index, Fahrten aus der DB mit dem Code vergleichen, einen Blick schreiben, lesen und löschen. Protokoll in <code>db/einrichtung.txt</code>.</dd>
+        <dt>In der App</dt><dd>Fahrten, Rundgang und Drehbuch aus der DB. Klick auf Stein: Steckbrief mit Herkunft und Karte des Wegs. Am Zeitregler das passende Ereignis mit Quelle. Beim Betreten eines Saals seine Funktion, Temperaturen und Nachhall. Abschnitt BLICKE: merken, zeigen, Fahrt aus allen Blicken.</dd>
+        <dt>Ohne DB</dt><dd>Die App startet wie bisher mit den eingebauten Inhalten; die Statuszeile sagt, warum keine Verbindung besteht.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Stand der Prüfung</span>
+      <dl>
+        <dt>Geprüft</dt><dd>Übersetzung, Zerlegung der Skripte, Steckbrief, Karte, Baugeschichte und Saalinfo in der laufenden App mit Testdaten aus denselben Quellen wie die Skripte.</dd>
+        <dt>Eingerichtet</dt><dd><code>DbSetup</code> lief auf deinem Rechner gegen Oracle 21.3 durch: alle Skripte ohne Fehler, alle Prüfungen in Ordnung. Wege nach Rom: Tibur 23 km, Luna 369 km, Simitthus 742 km, Krokeai 1257 km, Chasambali 1786 km, Prokonnesos 1881 km, Dokimeion 2012 km, Mons Claudianus 2888 km, Mons Porphyrites 2917 km. Fahrten, Rundgang und Drehbuch aus der DB stimmen mit dem Code überein.</dd>
+        <dt>Namen</dt><dd>„Blick merken“ und „Fahrt aus allen Blicken“ fragen im <code>FOptionPane</code> aus FStyle; leer lassen übernimmt den Vorschlag.</dd>
+        <dt>Inhalte</dt><dd>Belegt: Pavonazzetto, Giallo antico, Porphyr, Serpentin, lunensischer und prokonnesischer Marmor, ägyptischer Granit. Nur in der Szene verwendet, für die Thermen nicht eigens belegt: Verde antico und Travertin. Wo ein Weg oder Hafen nicht belegt ist, sagt es der Text.</dd>
+      </dl>
+    </div>
+  </div>
+  <p>Erst planen, dann bauen: Hier stehen Ausgangspunkt, Themen, eine grobe Struktur und zehn Fragen. Tabellen und Skripte entstehen erst, wenn die Fragen entschieden sind.</p>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Ausgangspunkt</span>
+      <dl>
+        <dt>Heute</dt><dd>Die App läuft ohne Datenbank. Säle, Fahrten, Rundgang und Drehbuch stehen im Code (<code>ThermenModel</code>, <code>Programme</code>). Gespeichert wird nichts.</dd>
+        <dt>Schema</dt><dd>Oracle 21c, Dienst PDBORCL, Schema DEMO. Dort liegen schon die Tabellen anderer Projekte, zum Beispiel <code>VUL_</code>. Von hier aus erreiche ich deine Datenbank nicht, deshalb die Bestandsaufnahme unten.</dd>
+        <dt>Bestand</dt><dd><code>tools/DbBestand.java</code> liest nur: Präfixe und Tabellen in DEMO, Objekte mit <code>CAR_</code>, Spatial-Metadaten, Platz, Rechte und als Vorbild die <code>VUL_</code>-Tabellen. Das Ergebnis landet in <code>db/bestand.txt</code>.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Themen</span>
+      <dl>
+        <dt>Raumprogramm</dt><dd>Säle mit Funktion, Maßen, Temperatur, Nachhall und Ankunftsblick. Heute stehen diese Werte verstreut im Code.</dd>
+        <dt>Steine</dt><dd>Die Marmore und Granite der Szene mit ihren Steinbrüchen: Pavonazzetto aus Dokimeion, Giallo antico aus Chemtou, Verde antico aus Thessalien, Porphyr vom Mons Porphyrites, Granit aus Ägypten, weißer Marmor aus Luna (Carrara). Punkte in SRID 8307 und der Weg nach Rom.</dd>
+        <dt>Regie</dt><dd>Fahrten, Rundgang und Drehbuch mit Schlüsselbildern, Sonnenzeit, Dunst und Tafeltexten. Neue Fahrten ohne Programmieren.</dd>
+        <dt>Voreinstellungen</dt><dd>Gemerkte Blicke: Kamera, Datum und Uhrzeit, Wetter, Schnitt, Zeitregler, Wärmebild, Wasserweg.</dd>
+        <dt>Baugeschichte</dt><dd>Ereignisse von der Grundsteinlegung bis heute, verbunden mit dem Zeitregler.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--gold, #d6aa5c)">Struktur, grob</span>
+      <dl>
+        <dt>Säle</dt><dd><code>CAR_ROOM</code></dd>
+        <dt>Steine</dt><dd><code>CAR_QUARRY</code> (Punkt, Weg als Linie) ← <code>CAR_STONE</code> ← Zuordnung zu den Materialnummern der Szene</dd>
+        <dt>Regie</dt><dd><code>CAR_TIMELINE</code> → <code>CAR_CLIP</code> → <code>CAR_KEY</code></dd>
+        <dt>Blicke</dt><dd><code>CAR_VIEW</code></dd>
+        <dt>Geschichte</dt><dd><code>CAR_EVENT</code> mit Jahr, Text, Quelle</dd>
+        <dt>Zugriff</dt><dd>In der App eine schmale Schicht <code>com.dan.caracalla.db</code>, die bei fehlender Verbindung still auf die eingebauten Inhalte zurückfällt.</dd>
+      </dl>
+    </div>
+  </div>
+  <h3 style="margin-top:22px">Entschieden am 25.09.2026 · überall A</h3>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>#</th><th>Frage</th><th>Optionen</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td class="q">Themen</td><td><span class="opt rec"><i>A</i>Alle fünf: Raumprogramm, Steine mit Steinbrüchen, Regie, Voreinstellungen, Baugeschichte</span><span class="opt"><i>B</i>Nur Regie und Voreinstellungen (das, was die App schon kann, pflegbar machen)</span><span class="opt"><i>C</i>Nur Steine und Steinbrüche als Schaukasten</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">2</td><td class="q">Ort</td><td><span class="opt rec"><i>A</i>Präfix <code>CAR_</code> im Schema DEMO, wie <code>VUL_</code> beim Vulcano</span><span class="opt"><i>B</i>Eigenes Schema CARACALLA</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">3</td><td class="q">Regie-Modell</td><td><span class="opt rec"><i>A</i>Fahrt → Einstellung → Schlüsselbild mit absoluten Koordinaten, genau wie <code>CameraPath</code> im Code; Tafeltexte, Sonne und Dunst je Einstellung</span><span class="opt"><i>B</i>Schlüsselbilder relativ zu benannten Ankern (Saalmitte, Labrum, Schürloch), wie beim Vulcano</span><span class="opt"><i>C</i>Eine Fahrt als JSON-Text in einer Spalte</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">4</td><td class="q">Geometrie der Steinbrüche</td><td><span class="opt rec"><i>A</i><code>SDO_GEOMETRY</code> in SRID 8307: Steinbruch als Punkt, dazu der Transportweg nach Rom als Linie (Land, Nil oder Meer, Portus, Tiber)</span><span class="opt"><i>B</i>Nur Punkte</span><span class="opt"><i>C</i>Länge und Breite als Zahlen, ohne Spatial</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">5</td><td class="q">Ohne Datenbank</td><td><span class="opt rec"><i>A</i>Die App startet immer. Ist die DB erreichbar, kommen Inhalte von dort, sonst die eingebauten aus dem Code; ein Hinweis in der Statuszeile</span><span class="opt"><i>B</i>DB ist Pflicht</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">6</td><td class="q">Schreiben aus der App</td><td><span class="opt rec"><i>A</i>Ja, für Voreinstellungen und eigene Fahrten: „Blick merken“ nimmt Kamera, Sonne und Zugaben auf; Fahrten aus gemerkten Blicken zusammenstellen</span><span class="opt"><i>B</i>Nur lesen, gepflegt wird per SQL</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">7</td><td class="q">Verbindung</td><td><span class="opt rec"><i>A</i><code>db/db.properties</code> im Projekt (URL, Benutzer, Passwort), nicht im Code, nicht im JAR</span><span class="opt"><i>B</i>Anmeldedialog beim Start</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">8</td><td class="q">Werkzeuge</td><td><span class="opt rec"><i>A</i>SQL-Skripte (Tabellen, Daten, Abbau) plus ein Java-Einrichter mit Durchstich-Test, wie beim Vulcano</span><span class="opt"><i>B</i>Nur SQL-Skripte</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">9</td><td class="q">Was man in der App sieht</td><td><span class="opt rec"><i>A</i>Steckbrief per Klick auf eine Wand oder Säule (Stein, Herkunft, Karte des Wegs nach Rom), Ereignisse der Baugeschichte am Zeitregler, Regie-Listen aus der DB</span><span class="opt"><i>B</i>Nur die Regie-Listen</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">10</td><td class="q">Umfang der Inhalte</td><td><span class="opt rec"><i>A</i>Rund 8 Steinsorten mit ihren Brüchen, alle Säle, alle heutigen Fahrten und das Drehbuch, rund 20 Ereignisse der Baugeschichte mit Quellenangabe (vor dem Befüllen recherchiert)</span><span class="opt"><i>B</i>Nur Gerüst mit wenigen Beispielzeilen</span></td><td><span class="pill done">A</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 style="margin-top:26px">Tabellenentwurf <small style="font-weight:400;color:var(--muted)">zur Freigabe · noch keine Skripte</small></h3>
+  <p>Schlüssel als Identitätsspalten, Ja/Nein-Felder als <code>CHAR(1)</code> mit Prüfung auf J/N, Koordinaten der Szene in Metern (lokal: y nach oben, +z zum Caldarium). Der Entwurf steht unter Vorbehalt der Bestandsaufnahme.</p>
+  <h3 style="margin-top:18px"><code>CAR_ROOM</code> <small style="font-weight:400;color:var(--muted)">Säle und Höfe</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>ROOM_ID</code></td><td>NUMBER, Identität</td><td>Schlüssel</td></tr><tr><td><code>CODE</code></td><td>VARCHAR2(30) eindeutig</td><td>z. B. CALDARIUM</td></tr><tr><td><code>NAME</code></td><td>VARCHAR2(60)</td><td>Anzeigename</td></tr><tr><td><code>FUNKTION</code></td><td>VARCHAR2(600)</td><td>Wozu der Saal diente</td></tr><tr><td><code>BADEFOLGE</code></td><td>NUMBER(3)</td><td>Reihenfolge im Rundgang, leer = nicht in der Folge</td></tr><tr><td><code>FORM</code></td><td>VARCHAR2(10)</td><td>RECHTECK oder RUND</td></tr><tr><td><code>LAENGE_M, BREITE_M, HOEHE_M</code></td><td>NUMBER(6,2)</td><td>Maße innen; bei RUND ist LAENGE_M der Durchmesser</td></tr><tr><td><code>UEBERDACHT, BEHEIZT</code></td><td>CHAR(1)</td><td>J/N</td></tr><tr><td><code>TEMP_LUFT_C, TEMP_WASSER_C</code></td><td>NUMBER(4,1)</td><td>Für das Wärmebild</td></tr><tr><td><code>NACHHALL_S, HALL_ANTEIL</code></td><td>NUMBER(4,1), NUMBER(3,2)</td><td>Für den Klang</td></tr><tr><td><code>BOX_X0 … BOX_Z1, RADIUS</code></td><td>NUMBER(8,2)</td><td>Rauminhalt wie in <code>Room</code>: Quader oder Zylinder</td></tr><tr><td><code>EYE_X/Y/Z, LOOK_X/Y/Z</code></td><td>NUMBER(8,2)</td><td>Ankunftsblick der Innenkamera</td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_QUARRY</code> <small style="font-weight:400;color:var(--muted)">Steinbrüche</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>QUARRY_ID</code></td><td>NUMBER, Identität</td><td>Schlüssel</td></tr><tr><td><code>CODE</code></td><td>VARCHAR2(30) eindeutig</td><td>z. B. DOKIMEION</td></tr><tr><td><code>NAME_ANTIK, NAME_HEUTE</code></td><td>VARCHAR2(80)</td><td>Docimium / İscehisar</td></tr><tr><td><code>LAND_HEUTE</code></td><td>VARCHAR2(40)</td><td>Türkei, Tunesien …</td></tr><tr><td><code>LAGE</code></td><td>SDO_GEOMETRY</td><td>Punkt, SRID 8307</td></tr><tr><td><code>WEG</code></td><td>SDO_GEOMETRY</td><td>Transportweg nach Rom als Linie, SRID 8307</td></tr><tr><td><code>WEG_KM</code></td><td>NUMBER(6)</td><td>Länge des Wegs, aus der Geometrie berechnet</td></tr><tr><td><code>WEG_TEXT</code></td><td>VARCHAR2(600)</td><td>Land, Fluss, Meer, Portus, Tiber</td></tr><tr><td><code>QUELLE</code></td><td>VARCHAR2(400)</td><td>Beleg</td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_STONE</code> <small style="font-weight:400;color:var(--muted)">Steinsorten</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>STONE_ID</code></td><td>NUMBER, Identität</td><td>Schlüssel</td></tr><tr><td><code>CODE</code></td><td>VARCHAR2(30) eindeutig</td><td>z. B. PAVONAZZETTO</td></tr><tr><td><code>NAME, NAME_ANTIK</code></td><td>VARCHAR2(80)</td><td>Pavonazzetto / marmor Phrygium</td></tr><tr><td><code>ART</code></td><td>VARCHAR2(20)</td><td>MARMOR, GRANIT, PORPHYR, KALKSTEIN</td></tr><tr><td><code>QUARRY_ID</code></td><td>NUMBER → CAR_QUARRY</td><td>Herkunft</td></tr><tr><td><code>FARBE_HEX</code></td><td>VARCHAR2(7)</td><td>Grundfarbe für den Steckbrief</td></tr><tr><td><code>BESCHREIBUNG</code></td><td>VARCHAR2(1000)</td><td>Aussehen, Wert, Geschichte</td></tr><tr><td><code>IN_DEN_THERMEN</code></td><td>VARCHAR2(600)</td><td>Wo er in der Szene vorkommt</td></tr><tr><td><code>QUELLE</code></td><td>VARCHAR2(400)</td><td>Beleg</td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_MAT_STONE</code> <small style="font-weight:400;color:var(--muted)">Welche Szenenmaterialien aus welchem Stein sind</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>MAT_NO</code></td><td>NUMBER(3)</td><td>Materialnummer aus <code>Mat</code> (MARBLE = 6 …)</td></tr><tr><td><code>STONE_ID</code></td><td>NUMBER → CAR_STONE</td><td>Stein; Schlüssel ist (MAT_NO, STONE_ID)</td></tr><tr><td><code>MAT_CODE</code></td><td>VARCHAR2(20)</td><td>Name der Konstante zur Lesbarkeit</td></tr><tr><td><code>HINWEIS</code></td><td>VARCHAR2(200)</td><td>z. B. „Wandfelder im Wechsel“</td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_TIMELINE</code> <small style="font-weight:400;color:var(--muted)">Fahrten, Rundgang, Drehbuch</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>TIMELINE_ID</code></td><td>NUMBER, Identität</td><td>Schlüssel</td></tr><tr><td><code>CODE</code></td><td>VARCHAR2(30) eindeutig</td><td>z. B. DREHBUCH_TAG</td></tr><tr><td><code>NAME</code></td><td>VARCHAR2(80)</td><td>Anzeige in der Liste</td></tr><tr><td><code>ART</code></td><td>VARCHAR2(10)</td><td>FAHRT, RUNDGANG, DREHBUCH</td></tr><tr><td><code>TAG_IM_JAHR</code></td><td>NUMBER(3)</td><td>Leer = Datum bleibt</td></tr><tr><td><code>WASSERWEG</code></td><td>CHAR(1)</td><td>Wasserweg beim Abspielen einblenden</td></tr><tr><td><code>REIHENFOLGE</code></td><td>NUMBER(3)</td><td>Position in der Auswahl</td></tr><tr><td><code>EINGEBAUT</code></td><td>CHAR(1)</td><td>J = aus dem Code übernommen, N = selbst angelegt</td></tr><tr><td><code>ANGELEGT</code></td><td>TIMESTAMP</td><td>Zeitpunkt</td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_CLIP</code> <small style="font-weight:400;color:var(--muted)">Einstellungen einer Fahrt</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>CLIP_ID</code></td><td>NUMBER, Identität</td><td>Schlüssel</td></tr><tr><td><code>TIMELINE_ID</code></td><td>NUMBER → CAR_TIMELINE</td><td>löscht mit</td></tr><tr><td><code>POS</code></td><td>NUMBER(3)</td><td>Reihenfolge; eindeutig je Fahrt</td></tr><tr><td><code>HARTER_SCHNITT</code></td><td>CHAR(1)</td><td>Kurze Abblende davor</td></tr><tr><td><code>STUNDE_VON, STUNDE_BIS</code></td><td>NUMBER(4,2)</td><td>Sonnenzeit, leer = bleibt</td></tr><tr><td><code>DUNST</code></td><td>NUMBER(3,2)</td><td>0 bis 1, leer = bleibt</td></tr><tr><td><code>TITEL</code></td><td>VARCHAR2(80)</td><td>Tafel</td></tr><tr><td><code>TEXT</code></td><td>VARCHAR2(600)</td><td>Tafeltext</td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_KEY</code> <small style="font-weight:400;color:var(--muted)">Schlüsselbilder</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>CLIP_ID</code></td><td>NUMBER → CAR_CLIP</td><td>löscht mit</td></tr><tr><td><code>T_S</code></td><td>NUMBER(7,3)</td><td>Zeit in der Einstellung; Schlüssel ist (CLIP_ID, T_S)</td></tr><tr><td><code>EYE_X/Y/Z, LOOK_X/Y/Z</code></td><td>NUMBER(9,3)</td><td>Augpunkt und Blickziel wie in <code>CameraPath</code></td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_VIEW</code> <small style="font-weight:400;color:var(--muted)">Gemerkte Blicke</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>VIEW_ID</code></td><td>NUMBER, Identität</td><td>Schlüssel</td></tr><tr><td><code>NAME</code></td><td>VARCHAR2(80) eindeutig</td><td>vom Benutzer vergeben</td></tr><tr><td><code>MODUS</code></td><td>VARCHAR2(6)</td><td>ORBIT oder INNEN</td></tr><tr><td><code>EYE_X/Y/Z, LOOK_X/Y/Z</code></td><td>NUMBER(9,3)</td><td>Kamera</td></tr><tr><td><code>TAG_IM_JAHR, STUNDE, DUNST</code></td><td>NUMBER</td><td>Sonne und Wetter</td></tr><tr><td><code>DACH, SCHNITT, WAERMEBILD, WASSERWEG</code></td><td>CHAR(1)</td><td>Schalter</td></tr><tr><td><code>SCHNITT_X</code></td><td>NUMBER(5,1)</td><td>Schnittebene</td></tr><tr><td><code>ZEIT</code></td><td>NUMBER(3,2)</td><td>Zeitregler 0 = 216, 1 = heute</td></tr><tr><td><code>NOTIZ</code></td><td>VARCHAR2(400)</td><td>frei</td></tr><tr><td><code>ANGELEGT</code></td><td>TIMESTAMP</td><td>Zeitpunkt</td></tr></tbody></table></div>
+  <h3 style="margin-top:18px"><code>CAR_EVENT</code> <small style="font-weight:400;color:var(--muted)">Baugeschichte</small></h3>
+  <div class="tbl"><table><thead><tr><th>Spalte</th><th>Typ</th><th>Bedeutung</th></tr></thead><tbody><tr><td><code>EVENT_ID</code></td><td>NUMBER, Identität</td><td>Schlüssel</td></tr><tr><td><code>JAHR, JAHR_BIS</code></td><td>NUMBER(5)</td><td>Jahr n. Chr., JAHR_BIS für Zeiträume</td></tr><tr><td><code>DATIERUNG</code></td><td>VARCHAR2(40)</td><td>wie es in der Quelle steht, z. B. „um 216“</td></tr><tr><td><code>TITEL</code></td><td>VARCHAR2(80)</td><td>Kurzform</td></tr><tr><td><code>TEXT</code></td><td>VARCHAR2(1000)</td><td>Was geschah</td></tr><tr><td><code>ZEIT</code></td><td>NUMBER(3,2)</td><td>Stelle am Zeitregler, an der es angezeigt wird</td></tr><tr><td><code>ROOM_ID</code></td><td>NUMBER → CAR_ROOM</td><td>betroffener Saal, leer = ganze Anlage</td></tr><tr><td><code>QUELLE, QUELLE_URL</code></td><td>VARCHAR2(400)</td><td>Beleg</td></tr></tbody></table></div>
+  <p>Dazu die Spatial-Metadaten für <code>CAR_QUARRY.LAGE</code> und <code>CAR_QUARRY.WEG</code> (SRID 8307) mit räumlichen Indizes. Keine Sichten und keine Pakete vorgesehen; die App liest mit einfachen Abfragen und schreibt nur <code>CAR_VIEW</code> sowie selbst angelegte Fahrten.</p>
+  <p>Der Entwurf wurde am 25.09.2026 freigegeben und so gebaut; hinzugekommen ist <code>CAR_MAT_STONE</code> nur als Zuordnungstabelle wie geplant.</p>
+</section>
+
+<section id="phase7">
+  <h2>Phase 7 · Zugaben <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p7_schnitt.jpg" alt="Längsschnitt durch den Zentralbau: halbe Kassettenkuppel, Frigidarium-Gewölbe, darunter das Hypokaustum" loading="lazy"><figcaption>Schnitt bei x = 0 · Blick über den Modellsockel</figcaption></figure>
+    <figure><img src="./p7_hypo.jpg" alt="Nahansicht des Schnitts im Caldarium: glühende Ziegelpfeiler unter dem Boden, halbiertes Labrum" loading="lazy"><figcaption>Hypokaustum: Pfeiler im Feuerschein, darüber die Suspensura</figcaption></figure>
+    <figure><img src="./p7_ruine.jpg" alt="Die Anlage heute als Ruine: abgebrochene Ziegelmauern, Gras in den Sälen" loading="lazy"><figcaption>Zeitregler auf „heute“</figcaption></figure>
+    <figure><img src="./p7_ruine_cal.jpg" alt="Caldarium als Ruine: offener Ziegel-Rundbau ohne Kuppel, Gras am Boden" loading="lazy"><figcaption>Das Caldarium heute, ohne Kuppel und Marmor</figcaption></figure>
+    <figure><img src="./p7_waerme.jpg" alt="Wärmebild des Schnitts: Caldarium gelb, Hypokaustum weiß, Frigidarium violett" loading="lazy"><figcaption>Wärmebild im Schnitt, Juni 15:30</figcaption></figure>
+    <figure><img src="./p7_wasser.jpg" alt="Leuchtende Wasserlinien unter dem Garten zu den Praefurnien am Caldarium" loading="lazy"><figcaption>Wasserweg: Leitungen unter dem Garten, Glut in den Praefurnien</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Was drin ist</span>
+      <dl>
+        <dt>Schnitt</dt><dd>Öffnet den Zentralbau an einer frei verschiebbaren Ebene (x von −60 bis 60 m). Mauern, Gewölbe und die Kuppel zeigen ihre Schnittflächen als schraffierten Mauerkern, das Erdreich braun. Darunter liegt das Hypokaustum: rund 1400 Ziegelpfeiler unter Caldarium und Tepidarium, die schwebende Bodenplatte und die Tubuli im Mauerkern, die im Schnitt glühen. Heißluft zieht als Glut vom Schürloch zwischen den Pfeilern hindurch und steigt in den Wänden auf. „Zum Schnitt blicken“ stellt die Kamera davor.</dd>
+        <dt>Praefurnien</dt><dd>Drei Öfen außen am Caldarium unter den Wannenfenstern, mit flackernder Glut, Feuerschein auf Boden und Mauer, Bronzekessel darüber und Brennholz daneben.</dd>
+        <dt>Heute und 216</dt><dd>Ein Regler lässt die Zeit laufen: Gewölbe stürzen stückweise ein, die Mauern brechen in abgetreppten Kanten ab, Marmor und Putz fallen und geben das Ziegelmauerwerk mit seinen Bändern frei, Statuen und Säulen verschwinden, die Becken liegen trocken, Gras wächst in den Sälen. Die Schatten folgen, Dampf, Feuer und Wasser gehen aus.</dd>
+        <dt>Wasserweg</dt><dd>Die Aqua Antoniniana steht jetzt als Bogenreihe im Gelände, mit Kanal und Wasser oben. Leuchtende Teilchen folgen dem Weg über die Zisternen unter dem Stadion und durch Bleirohre unter dem Garten: kalt zur Natatio und zum Frigidarium, über die Kessel der Praefurnien heiß in die Wannen und ins Labrum, lauwarm zu den Becken am Tepidarium. Unter der Erde scheinen sie gedämpft durch. Neue Fahrt „Dem Wasser folgen“ (69 s).</dd>
+        <dt>Wärmebild</dt><dd>Temperaturen nach Saal, Tages- und Jahreszeit: beheizte Böden und Wände, Becken, Glut, sonnenwarmer Stein, kalter Himmel. Die Skala stellt sich wie eine Wärmebildkamera auf die Außentemperatur ein, eine Legende zeigt den Bereich.</dd>
+        <dt>Klang</dt><dd>Wasser aus vielen kleinen Blasentönen über Rauschen, Tropfen, Knistern und Grollen am Feuer, Wind im Freien, heute Vogelrufe. Ein Hall nach Freeverb-Art bekommt seine Nachhallzeit vom Saal: 6,5 s unter der Kuppel, 4,8 s im Frigidarium, draußen kaum. Ein Stein ins Wasser plätschert hörbar.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Bedienung und Technik</span>
+      <dl>
+        <dt>Bedienen</dt><dd>Abschnitt ZUGABEN im Bedienfeld. Tasten: X Schnitt, Z zwischen 216 und heute, I Wärmebild, L Wasserweg, M Klang. Das Bedienfeld rollt jetzt mit der <code>FScrollBar</code> aus FStyle.</dd>
+        <dt>Schnittflächen</dt><dd>Wo der Blick durch weggenommenes Volumen geht, zeichnet der Renderer auch Rückseiten und füllt sie als Schnittfläche: an der Schnittebene schraffiert, an Abbruchkanten der Ruine als Mauerkrone mit Gras, an Bruchstellen der Kuppel als Beton. Überall sonst bleiben Rückseiten unsichtbar wie bisher.</dd>
+        <dt>Geprüft</dt><dd>Standbilder aller Zustände, Bedienung per Robot unter Xvfb, <code>PathCheck</code> mit der neuen Fahrt (0 Probleme), Klang offline in eine WAV-Datei gerechnet und im Spektrogramm geprüft. Ein Hänger beim ersten Umschalten auf „heute“ ist behoben.</dd>
+        <dt>Neu im Code</dt><dd><code>model.Hypocaust</code>, <code>model.WaterSupply</code>, <code>model.Route</code>, <code>render.Streams</code>, <code>render.Ruin</code>, <code>render.Thermal</code>, <code>audio.SoundScape</code>; Werkzeuge <code>SoundTest</code> und <code>GuiShot</code>.</dd>
+        <dt>Noch schwach</dt><dd>Die Himmelssicht ist für den Bau mit Dach gerechnet, in der Ruine wird sie nur geschätzt. Den Klang konnte ich nur messen, nicht hören: Lautstärken bitte am eigenen Gerät prüfen.</dd>
+        <dt>Projekt</dt><dd>46 Quelldateien im Projektordner, abgeglichen mit dem geprüften Stand. Beim ersten Start wird die Himmelssicht neu gerechnet.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="phase6">
+  <h2>Phase 6 · Regie <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p6_app.jpg" alt="Die App während des Drehbuchs: Tafel „Rom, im Jahr 216“ und Zeitleiste unten" loading="lazy"><figcaption>Drehbuch läuft · Tafel und Zeitleiste im Bild</figcaption></figure>
+    <figure><img src="./p6_morgen.jpg" alt="Morgendlicher Anflug über den Park auf die Nordfassade" loading="lazy"><figcaption>0:29 · Morgennebel, Anflug über den Park</figcaption></figure>
+    <figure><img src="./p6_achse.jpg" alt="Flug durch die Achse: Blick vom Tepidarium durch die Tür ins Caldarium" loading="lazy"><figcaption>1:05 · Flug durch die Achse ins Caldarium</figcaption></figure>
+    <figure><img src="./p6_palaestra.jpg" alt="Palästra mit Säulenhalle im frühen Nachmittag" loading="lazy"><figcaption>2:12 · Die Palästra</figcaption></figure>
+    <figure><img src="./p6_nachmittag.jpg" alt="Caldarium am Nachmittag mit Lichtstrahlen im Dampf" loading="lazy"><figcaption>2:45 · Nachmittag im Caldarium</figcaption></figure>
+    <figure><img src="./p6_abend.jpg" alt="Kreuzgewölbe und Kuppel im Abendlicht von oben" loading="lazy"><figcaption>3:15 · Abendlicht</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Was drin ist</span>
+      <dl>
+        <dt>Fahrten</dt><dd><b>Rundumblick</b> (72 s): einmal um die Anlage mit wechselnder Höhe und Entfernung. <b>Flug durch die Achse</b> (47 s): über die Schauwand in die Natatio, durch die Bögen von Frigidarium und Tepidarium ins Caldarium und hinauf in die Kuppel. <b>Aufstieg im Licht</b> (32 s): spiralförmig im Dampf bis unter die Kassetten.</dd>
+        <dt>Rundgang</dt><dd>Knapp drei Minuten in der Badefolge: Ankunft über den Park, Palästra, durch Nebenräume und Tepidarium ins Caldarium, zurück ins Tepidarium, Frigidarium, Natatio, Abschied von oben. An jeder Station eine Tafel und ein langsamer Schwenk.</dd>
+        <dt>Drehbuch</dt><dd>„Ein Tag in den Thermen“, 3:43 Minuten am 21. März: neun Einstellungen vom Sonnenaufgang bis zur Dämmerung mit Sonnenlauf, Morgendunst, Tafeln und kurzen Abblenden zwischen den Einstellungen. Am Ende das Jahr 537.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Bedienung und Technik</span>
+      <dl>
+        <dt>Bedienen</dt><dd>Abschnitt REGIE im Bedienfeld, F5 für das Drehbuch, T für den Rundgang, Esc hält an. Ein Klick auf die Zeitleiste springt. Jede Maus- oder Tasteneingabe übernimmt die Kamera an Ort und Stelle: außen hoch als Orbit, sonst frei.</dd>
+        <dt>Geprüft</dt><dd><code>PathCheck</code> fährt alle Wege in Schritten von 0,04 s ab: Die Kamera durchquert keine Fläche und kommt keiner näher als 25 cm. Eine Säule im Rundgang stand im Weg und wurde umgangen.</dd>
+        <dt>Neu im Code</dt><dd>Paket <code>regie</code> mit <code>CameraPath</code>, <code>Clip</code>, <code>Timeline</code>, <code>Director</code>, <code>Programme</code>; Werkzeuge <code>PathCheck</code> und <code>ScriptFrames</code>. Das Bedienfeld lässt sich jetzt rollen.</dd>
+        <dt>Noch schwach</dt><dd>Die Nebenräume, durch die der Rundgang führt, sind leer und dunkel. Der Wetter-Schalter im Bedienfeld folgt dem Dunst des Drehbuchs nicht.</dd>
+        <dt>Projekt</dt><dd>37 Quelldateien im Projektordner, abgeglichen mit dem geprüften Stand.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="phase5">
+  <h2>Phase 5 · Dampf und Nebel <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p5_kuppel.jpg" alt="Blick in die Kuppel: Dampf sammelt sich oben, Sonnenstrahlen aus den oberen Fenstern leuchten darin" loading="lazy"><figcaption>Dampf unter der Kuppel, Strahlen aus den oberen Fenstern</figcaption></figure>
+    <figure><img src="./p5_winter.jpg" alt="Caldarium im Winter mit Dampfschwaden in den Lichtbahnen" loading="lazy"><figcaption>21. Dezember, 15:00 · Schwaden im Wintersonnenstrahl</figcaption></figure>
+    <figure><img src="./p5_sommer.jpg" alt="Caldarium im Sommer, Dampf über den Wannen" loading="lazy"><figcaption>Sommernachmittag · Dampf über den Wannen</figcaption></figure>
+    <figure><img src="./p5_labrum.jpg" alt="Labrum mit Dampf, dahinter die Fenster" loading="lazy"><figcaption>Am Labrum</figcaption></figure>
+    <figure><img src="./p5_morgennebel.jpg" alt="Die Natatio am frühen Morgen mit leichtem Nebel über dem Wasser" loading="lazy"><figcaption>Natatio um 6:48 bei Dunst · Morgennebel</figcaption></figure>
+    <figure><img src="./p5_tepidarium.jpg" alt="Lauwarmes Becken in einem Nebenraum, Dampf im Streiflicht" loading="lazy"><figcaption>Lauwarmes Becken im Nebenraum</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--stone)">Was drin ist</span>
+      <dl>
+        <dt>Quellen</dt><dd>Dampf entsteht je nach Wärme des Wassers: stark an den drei Caldarium-Wannen, mittel am Labrum, schwach an den Becken neben dem Tepidarium, nicht im kalten Frigidarium. Über der Natatio liegt morgens bis 9:30 und abends ab 18 Uhr Nebel, bei Dunst auch tagsüber etwas.</dd>
+        <dt>Bewegung</dt><dd>Bis zu 26 000 Teilchen steigen mit Auftrieb auf, verwirbeln in einem Strömungsfeld ohne Quellen und Senken und folgen einer Umwälzung: an den warmen Wänden hoch, oben zur Mitte. Unter der Kuppel gleiten sie entlang und sammeln sich; an den Fensteröffnungen ziehen sie ab und lösen sich draußen auf.</dd>
+        <dt>Licht im Dampf</dt><dd>Die Teilchen werden in ein Dichtegitter mit 80 cm Maschenweite gestreut und geglättet; es ersetzt das Rauschfeld aus Phase 3. Die Sonnenstrahlen leuchten dort, wo Dampf ist. Junge Schwaden über dem Wasser werden zusätzlich als weiche, beleuchtete Wolken gezeichnet.</dd>
+        <dt>Flimmern</dt><dd>Wo der Blick durch die heiße Luft über den Wannen und dem Labrum geht, wird das Bild leicht wabernd versetzt.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--water)">Bedienung und Technik</span>
+      <dl>
+        <dt>Schalter</dt><dd>Neu im Bedienfeld: „Dampf, Nebel und Flimmern“. Aus bedeutet schlichten Dunst wie in Phase 3.</dd>
+        <dt>Start</dt><dd>Beim Start läuft der Dampf 70 Sekunden vor, damit die Kuppel schon gefüllt ist. Das kostet einige Sekunden.</dd>
+        <dt>Neu im Code</dt><dd><code>SteamSim</code> mit Teilchen und Dichtegitter; im <code>Renderer</code> Dampf im Strahlengang, Schwaden und Flimmern.</dd>
+        <dt>Projekt</dt><dd>30 Quelldateien im Projektordner, abgeglichen mit dem geprüften Stand.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="phase4">
+  <h2>Phase 4 · Wasser <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p4_natatio.jpg" alt="Die Natatio spiegelt die Schauwand mit ihren Statuen, vorne kreisförmige Wellen der Speier" loading="lazy"><figcaption>Natatio · die Schauwand im Wasser gespiegelt</figcaption></figure>
+    <figure><img src="./p4_boden.jpg" alt="Blick schräg nach unten durchs Wasser auf den Beckenboden mit Lichtnetzen" loading="lazy"><figcaption>Blick durchs Wasser: Lichtnetze am Beckenboden</figcaption></figure>
+    <figure><img src="./p4_frigidarium.jpg" alt="Becken im Frigidarium mit Wasserspeier und Ringwellen, Durchblick zur Natatio" loading="lazy"><figcaption>Frigidarium-Becken · Speier und Ringwellen</figcaption></figure>
+    <figure><img src="./p4_labrum.jpg" alt="Labrum aus Porphyr mit kleiner Fontäne in der Mitte des Caldariums" loading="lazy"><figcaption>Labrum im Caldarium</figcaption></figure>
+    <figure><img src="./p4_winter.jpg" alt="Labrum im Wintersonnenstrahl" loading="lazy"><figcaption>Das Labrum im Wintersonnenstrahl, 21. Dezember</figcaption></figure>
+    <figure><img src="./p4_tepidarium.jpg" alt="Dunkles Becken neben dem Tepidarium, der Speier spiegelt sich" loading="lazy"><figcaption>Becken neben dem Tepidarium</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--water)">Was drin ist</span>
+      <dl>
+        <dt>Wellen</dt><dd>Jedes der neun Becken hat ein Höhenfeld mit 20 cm Maschenweite nach der Wellengleichung. Wellen laufen, werden an den Rändern zurückgeworfen und klingen ab. Dazu feine Kräuselwellen.</dd>
+        <dt>Spiegelung</dt><dd>Im Bildraum: Der gespiegelte Strahl wird verfolgt, bis er hinter einer sichtbaren Fläche verschwindet. So spiegeln sich Schauwand, Statuen und Säulen. Was nicht im Bild ist, wird aus Himmel und Raumhelligkeit geschätzt.</dd>
+        <dt>Durchblick</dt><dd>Der Blickstrahl wird an der Oberfläche gebrochen und bis zum Beckenboden verfolgt. Der Boden wird mit gebrochenem Sonnenlicht und Lichtnetzen beleuchtet; Wasser schluckt Rot stärker als Grün und Blau.</dd>
+        <dt>Wasserspiele</dt><dd>Labrum aus Porphyr mit Fontäne in der Mitte des Caldariums. Bronzene Speier: vier an der Natatio, je einer an den Becken im Frigidarium und neben dem Tepidarium, drei an den Wannen im Caldarium. Die Strahlen bestehen aus Tropfen; wo sie auftreffen, entstehen Wellen und Spritzer.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Bedienung und Technik</span>
+      <dl>
+        <dt>Stein werfen</dt><dd>Einfacher Klick auf eine Wasserfläche: ein Plopp, Ringwellen und ein Kranz aus Spritzern.</dd>
+        <dt>Neu im Code</dt><dd><code>WaterBody</code> und <code>Fountain</code> im Modell, <code>WaterSim</code> für Wellen und Tropfen, eigener Wasserdurchgang im <code>Renderer</code> nach der Schattierung.</dd>
+        <dt>Tempo</dt><dd>Die Spiegelung kostet vor allem, wenn viel Wasser im Bild ist. Hier auf 2 Kernen bei 1280 × 720 bis 0,8 s je Bild an der Natatio, weniger in den Sälen.</dd>
+        <dt>Projekt</dt><dd>29 Quelldateien im Projektordner, abgeglichen mit dem geprüften Stand.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="phase3">
+  <h2>Phase 3 · Licht <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p3_winterstrahl.jpg" alt="Caldarium im Winter: ein breiter Sonnenstrahl fällt schräg durch den Dampf auf den Boden" loading="lazy"><figcaption>21. Dezember, 15:00 · der tiefe Wintersonnenstrahl im Dampf</figcaption></figure>
+    <figure><img src="./p3_abend.jpg" alt="Caldarium am Abend bei Dunst, orange Streiflicht an der Wand" loading="lazy"><figcaption>21. Juni, 18:54, dunstig · Abendlicht in der Nische</figcaption></figure>
+    <figure><img src="./p3_frigidarium.jpg" alt="Frigidarium mit Lichtbahnen aus den Lünetten und hellen, vom Boden erhellten Gewölben" loading="lazy"><figcaption>Frigidarium · Licht von Boden und Wänden hellt die Gewölbe auf</figcaption></figure>
+    <figure><img src="./p3_caldarium.jpg" alt="Caldarium am Nachmittag mit Lichtbahnen unter der Kuppel" loading="lazy"><figcaption>Caldarium · Nachmittag im Sommer</figcaption></figure>
+    <figure><img src="./p3_kuppel.jpg" alt="Blick in die Kuppel durch wogenden Dampf" loading="lazy"><figcaption>Dampf sammelt sich unter der Kuppel</figcaption></figure>
+    <figure><img src="./p3_dunst.jpg" alt="Die Anlage bei dunstigem Abendlicht" loading="lazy"><figcaption>Dunst am Abend</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Was drin ist</span>
+      <dl>
+        <dt>Lichtstrahlen</dt><dd>In Viertelauflösung wird jeder Blickstrahl in 30 Schritten durch die Schattenkarte verfolgt, mit Vorwärtsstreuung zur Sonne hin. Sichtbar wird Licht dort, wo etwas in der Luft ist: leichter Dunst überall, dichter wogender Dampf im Caldarium, weniger im Tepidarium, ein Hauch im Frigidarium und über der Natatio. Danach wird tiefenbewusst geglättet und hochskaliert.</dd>
+        <dt>Rückwurf</dt><dd>Beim Berechnen der Himmelssicht merkt sich jede Ecke, welche Fläche jeder zweite Strahl trifft. Für jeden Sonnenstand wird dort die Beleuchtung nachgeschlagen und als einmal zurückgeworfenes Licht aufsummiert, dann über ein Raumgitter mit sechs Richtungsfächern geglättet, damit nichts durch Mauern sickert.</dd>
+        <dt>Bloom</dt><dd>Helle Stellen wie Fenster, Sonne und Glanzlichter strahlen weich über.</dd>
+        <dt>Wetter und Zeit</dt><dd>Klar oder dunstig: Dunst macht den Himmel blasser, die Sonne schwächer und röter und die Ferne dichter. Zeitraffer mit 5 oder 20 Minuten Sonnenzeit je Sekunde.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--water)">Technik</span>
+      <dl>
+        <dt>Hintergrund</dt><dd>Schattenkarten, Himmel und Rückwurf rechnet ein eigener Thread. Zwei Beleuchtungssätze wechseln sich ab, das Bild läuft beim Verschieben der Sonne flüssig weiter.</dd>
+        <dt>Zwischenspeicher</dt><dd>Enthält jetzt auch die Strahltreffer (Datei <code>himmel2-…</code> in <code>~/.caracalla</code>, etwa 50 MB). Der erste Start rechnet einmal neu.</dd>
+        <dt>Bedienfeld</dt><dd>Neu: Zeitraffer, Wetter, Lichtstrahlen und Bloom einzeln abschaltbar.</dd>
+        <dt>Neu im Code</dt><dd><code>Lighting</code>, <code>Atmosphere</code>, <code>Bvh.bounce</code> und <code>Bvh.closest</code>, Streulicht und Bloom im <code>Renderer</code>.</dd>
+        <dt>Projekt</dt><dd>Alle 26 Quelldateien liegen im Projektordner, abgeglichen mit dem geprüften Stand.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="phase2">
+  <h2>Phase 2 · Stein <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p2_kuppel.jpg" alt="Blick senkrecht in die Caldarium-Kuppel: fünf Reihen gestufter Kassetten mit Goldrosetten" loading="lazy"><figcaption>Caldarium-Kuppel · 160 Stufenkassetten mit Goldrosetten</figcaption></figure>
+    <figure><img src="./p2_frigidarium.jpg" alt="Frigidarium mit Kassettenrelief im Kreuzgratgewölbe, Wandverkleidung und Kolossalstatuen" loading="lazy"><figcaption>Frigidarium · Kassetten im Gewölbe, Kolosse an den Stirnseiten</figcaption></figure>
+    <figure><img src="./p2_caldarium.jpg" alt="Caldarium mit Orthostaten, Ringboden und Statuen in den Nischen" loading="lazy"><figcaption>Caldarium · Ringboden, Orthostaten, Statuen</figcaption></figure>
+    <figure><img src="./p2_natatio.jpg" alt="Natatio-Schauwand mit Statuen aus Marmor und Bronze in allen Nischen" loading="lazy"><figcaption>Natatio · 24 Statuen in der Schauwand</figcaption></figure>
+    <figure><img src="./p2_palaestra.jpg" alt="Palästra: Travertinhof, Säulenhalle aus Giallo antico, Exedra mit Kassettenhalbkuppel" loading="lazy"><figcaption>Palästra · Travertin, Exedra mit Kassetten</figcaption></figure>
+    <figure><img src="./p2_exedra.jpg" alt="Exedra der Umfassung mit elf Statuen in Nischen" loading="lazy"><figcaption>Exedra der Umfassung · elf Standbilder</figcaption></figure>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--porphyr)">Was drin ist</span>
+      <dl>
+        <dt>Kassetten</dt><dd>Caldarium-Kuppel als echte Geometrie: fünf Reihen zu je 32 Kassetten, zweifach gestuft, blauer Spiegel und vergoldete Rosette mit acht Blättern. Ebenso die Halbkuppeln der Palästra-Exedren. Kreuzgratgewölbe, Tonne und Flachdecken bekommen ein Kassettenrelief über die Normale, mit Rosetten und dunkleren Tiefen.</dd>
+        <dt>Wände</dt><dd>Sockel aus Verde antico, darüber Orthostaten aus Pavonazzetto in Giallo-Rahmen, jede vierte Platte mit Porphyrscheibe, Gesimsband, oben weiße Platten. Außen Putz mit Quaderritzung und Regenspuren.</dd>
+        <dt>Böden</dt><dd>Frigidarium in Opus sectile, Caldarium mit Ringen aus Plattenkränzen um eine Porphyrscheibe, Palästra-Hallen schwarz-weißes Mosaik mit Mäanderband, übrige Räume einfaches Mosaik. Travertin mit Schichtung und Poren.</dd>
+        <dt>Statuen</dt><dd>74 Standbilder in drei Grundformen (Gewandfigur, Athlet, Held mit Keule) aus Marmor oder Bronze mit Patina: Natatio, Mittelmauern, Frigidarium, Caldarium, Exedren. Frei gestaltete Figuren, keine Kopien bestimmter Werke.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--water)">Technik</span>
+      <dl>
+        <dt>Umfang</dt><dd>317 000 Dreiecke (vorher 220 000).</dd>
+        <dt>Himmelssicht</dt><dd>48 statt 32 Strahlen je Ecke. Das Ergebnis liegt danach in <code>~/.caracalla</code>. Der zweite Start braucht dafür 0,1 statt 12 Sekunden. Nach Änderungen am Bau wird neu gerechnet.</dd>
+        <dt>Neu im Code</dt><dd><code>Statues</code>, <code>SkyCache</code>, <code>Shapes.cofferedDome</code>, <code>MeshBuilder.transform</code>; <code>Materials.surface</code> darf die Normale verformen.</dd>
+        <dt>Projekt</dt><dd>Alle 24 Quelldateien liegen im Projektordner und stimmen mit dem geprüften Stand überein.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="phase1">
+  <h2>Phase 1 · Bau und Kamera <small>geliefert 25.09.2026</small></h2>
+  <div class="gal">
+    <figure><img src="./p1_aussen.jpg" alt="Die Anlage von Südosten am Nachmittag: Zentralbau mit Kuppel, Kreuzgewölben, Palästra und Pinienpark" loading="lazy"><figcaption>Übersicht, 21. Juni, 15:30 Sonnenzeit</figcaption></figure>
+    <figure><img src="./p1_caldarium.jpg" alt="Im Caldarium: Rundsaal mit zwei Fensterreihen, Wannen in den Buchten, Sonnenflecken auf dem Boden" loading="lazy"><figcaption>Caldarium · Sonne fällt durch die Südwestfenster</figcaption></figure>
+    <figure><img src="./p1_frigidarium.jpg" alt="Im Frigidarium: Granitsäulen, Bögen zu den Becken, Thermenfenster in den Lünetten, Kreuzgratgewölbe" loading="lazy"><figcaption>Frigidarium · acht Granitsäulen, Kreuzgratgewölbe</figcaption></figure>
+    <figure><img src="./p1_natatio.jpg" alt="Die Natatio: Schwimmbecken vor der Schauwand mit drei Reihen Statuennischen" loading="lazy"><figcaption>Natatio vor der Schauwand</figcaption></figure>
+    <figure><img src="./p1_schnitt.jpg" alt="Schnittmodell von oben ohne Dächer: Säle, Becken und Höfe" loading="lazy"><figcaption>Dächer aus: Blick von oben in die Säle</figcaption></figure>
+    <figure><img src="./p1_app.jpg" alt="Die App im FFrame mit Bedienfeld rechts und Statuszeile" loading="lazy"><figcaption>Die App · Bedienfeld und Statuszeile</figcaption></figure>
+  </div>
+  <p class="muted" style="font-size:13px">Alle Bilder sind in der App gerechnet (Standbild-Werkzeug im Projekt), ohne Nachbearbeitung.</p>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Was drin ist</span>
+      <dl>
+        <dt>Bau</dt><dd>Zentralbau 214 × 110 m mit Außenmauern und zwei Fensterreihen, Dachterrasse. Frigidarium mit drei Jochen Kreuzgratgewölbe (Scheitel 33 m), Lünetten mit Thermenfenstern und acht Granitsäulen. Tepidarium mit Tonne. Caldarium als Rundsaal (35 m) mit Kuppel (Scheitel 44,5 m), Fenstern in zwei Reihen, drei Wannen und Nischen. Natatio mit Schauwand. Zwei Palästren mit Säulenhallen und Exedra.</dd>
+        <dt>Anlage</dt><dd>Umfassung mit Läden (Tabernen), zwei Exedren, Stufen über den Zisternen, Bibliotheken, Park mit Pinien und Zypressen, Hügel am Horizont (Albaner und Tiburtiner Berge).</dd>
+        <dt>Licht</dt><dd>Sonnenstand über Rom nach Tag und Sonnenzeit, Achse Richtung Südwest. Zwei Schattenkarten (fein über dem Zentralbau, grob über dem Park) mit weichen Rändern. Himmelssicht je Ecke vorberechnet, dazu Belichtungsautomatik beim Wechsel zwischen hell und dunkel und eine Filmkurve.</dd>
+        <dt>Oberflächen</dt><dd>Erste Fassung der prozeduralen Materialien: Marmor mit Adern und Sockel aus Verde antico, Opus-sectile-Boden, Granit, Ziegel, Travertin, Kies und Rasen. Wasser mit Kräuselwellen, Fresnel und Sonnenglitzern.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--water)">Bedienung</span>
+      <dl>
+        <dt>Außen</dt><dd>Ziehen dreht, rechts Ziehen verschiebt, Rad zoomt, Doppelklick setzt den Drehpunkt, Leertaste startet den Rundflug.</dd>
+        <dt>Hinein</dt><dd>Wer in eine überdachte Halle zoomt, landet in der Innenkamera. Dort: Ziehen zum Umsehen, W A S D gehen, Q E tiefer und höher, Umschalt schneller, O zurück nach außen.</dd>
+        <dt>Säle</dt><dd>Auswahl im Bedienfeld oder Tasten 1 bis 5, mit kurzer Überblendung. 0 oder R zur Übersicht.</dd>
+        <dt>Bedienfeld</dt><dd>Dächer und Gewölbe ein und aus, Uhrzeit, Tag im Jahr, Bildqualität 50/75/100 %.</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Aufbau im Code</span>
+      <dl>
+        <dt>geo</dt><dd><code>MeshBuilder</code>, <code>Walls</code> (Mauern mit Fenstern, Bögen, Nischen, Lünetten, auch gekrümmt), <code>Shapes</code> (Gewölbe, Kuppeln, Becken, Säulen, Bäume).</dd>
+        <dt>model</dt><dd><code>ThermenModel</code>: der ganze Bau aus Maßen, <code>Room</code>: Säle mit Ankunftsblick.</dd>
+        <dt>render</dt><dd><code>Renderer</code> mit G-Puffer, <code>ShadowMap</code>, <code>Bvh</code> für die Himmelssicht, <code>Sky</code>, <code>Sun</code>, <code>Materials</code>.</dd>
+        <dt>ui</dt><dd><code>ScenePanel</code>, <code>CameraController</code>, <code>ControlPanel</code> mit FStyle-Bausteinen.</dd>
+        <dt>tools</dt><dd><code>StillRender</code> rechnet Standbilder ohne Fenster.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--warn)">Gut zu wissen</span>
+      <dl>
+        <dt>Start</dt><dd>Der Aufbau dauert einige Sekunden: 220 000 Dreiecke, danach wird für 180 000 Ecken die Himmelssicht mit je 32 Strahlen berechnet.</dd>
+        <dt>Tempo</dt><dd>Hier auf 2 Kernen gut 10 Bilder je Sekunde bei 906 × 627. Auf deinem Rechner mit mehr Kernen entsprechend mehr.</dd>
+        <dt>Projekt</dt><dd><code>project.properties</code>: Klassenpfad mit beiden JARs, <code>main.class</code>, <code>-Xmx4g</code>. Die alte Fassung liegt als <code>project.properties.vor-phase1</code> daneben.</dd>
+        <dt>Noch offen</dt><dd>Die Innenräume wirken noch zu dunkel, weil das Licht nicht von Boden und Wänden zurückgeworfen wird. Das kommt in Phase 3 mit den Lichtsonden.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Der Bau <small>was rekonstruiert wird</small></h2>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Eckdaten</span>
+      <dl>
+        <dt>Bauzeit</dt><dd>etwa 212 bis 216 n. Chr., eingeweiht 216 unter Caracalla. In Betrieb bis etwa 537, als die Goten die Aquädukte kappten.</dd>
+        <dt>Zentralbau</dt><dd>214 × 110 m, rund 44 m hoch. Die ganze Anlage misst innen 337 × 328 m.</dd>
+        <dt>Caldarium</dt><dd>Rundsaal mit 35 m Durchmesser, Kuppel fast so groß wie die des Pantheons. Ragt nach Südwesten aus dem Bau, damit die Nachmittagssonne durch die großen Fenster fällt.</dd>
+        <dt>Frigidarium</dt><dd>59 × 24 m, drei Kreuzgewölbe von knapp 33 m Höhe auf mächtigen Granitsäulen.</dd>
+        <dt>Natatio</dt><dd>Offenes Schwimmbecken, 54 × 23 m.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--water)">Wasser und Wärme</span>
+      <dl>
+        <dt>Zufluss</dt><dd>Aqua Antoniniana, ein Zweig der Aqua Marcia, speist 18 Zisternen mit rund 8 Millionen Litern.</dd>
+        <dt>Heizung</dt><dd>Hypokaustum: Heißluft aus den Praefurnien strömt unter den Böden und durch Wandröhren. Rund 10 t Holz am Tag.</dd>
+        <dt>Gäste</dt><dd>Etwa 1600 gleichzeitig, 6000 bis 8000 am Tag.</dd>
+        <dt>Ausstattung</dt><dd>252 Säulen, einige aus Granit mit fast 100 t, rund 6300 m³ Marmor, über 120 Statuen. Von hier stammen der Farnesische Stier und der Farnesische Herkules.</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="plan" role="img" aria-label="Schematischer Grundriss des Zentralbaus mit der Achse Natatio, Frigidarium, Tepidarium, Caldarium und zwei Palästren">
+    <svg viewBox="-8 -10 230 142" xmlns="http://www.w3.org/2000/svg">
+      <rect class="room" x="0" y="0" width="214" height="110" style="fill:none"></rect>
+      <line class="axis" x1="107" y1="1" x2="107" y2="130"></line>
+      <!-- Natatio -->
+      <rect class="room cold" x="80" y="4" width="54" height="23"></rect>
+      <text x="107" y="16.5" text-anchor="middle">Natatio 54 × 23</text>
+      <!-- Apodyterien -->
+      <rect class="room" x="46" y="4" width="30" height="30"></rect><text x="61" y="20" text-anchor="middle">Apodyterium</text>
+      <rect class="room" x="138" y="4" width="30" height="30"></rect><text x="153" y="20" text-anchor="middle">Apodyterium</text>
+      <!-- Frigidarium -->
+      <rect class="room cold" x="77.5" y="31" width="59" height="24"></rect>
+      <text x="107" y="44" text-anchor="middle">Frigidarium 59 × 24</text>
+      <!-- Tepidarium -->
+      <rect class="room warm" x="96" y="58" width="22" height="16"></rect>
+      <text x="107" y="67" text-anchor="middle">Tepidarium</text>
+      <!-- Palästren -->
+      <rect class="court" x="6" y="38" width="52" height="58"></rect>
+      <text x="32" y="68" text-anchor="middle">Palästra West</text>
+      <rect class="court" x="156" y="38" width="52" height="58"></rect>
+      <text x="182" y="68" text-anchor="middle">Palästra Ost</text>
+      <!-- Heiße Säle -->
+      <rect class="room hot" x="64" y="80" width="22" height="24"></rect><text x="75" y="93" text-anchor="middle" class="sm">Heißraum</text>
+      <rect class="room hot" x="128" y="80" width="22" height="24"></rect><text x="139" y="93" text-anchor="middle" class="sm">Heißraum</text>
+      <circle class="room hot" cx="107" cy="100" r="17.5"></circle>
+      <text x="107" y="101" text-anchor="middle">Caldarium ⌀ 35</text>
+      <!-- Sonnenstrahlen Nachmittag -->
+      <line class="ray" x1="70" y1="128" x2="93" y2="112"></line>
+      <line class="ray" x1="78" y1="132" x2="99" y2="116"></line>
+      <line class="ray" x1="62" y1="124" x2="88" y2="106"></line>
+      <text x="58" y="131" class="sm">Nachmittagssonne</text>
+      <!-- Maße -->
+      <text x="107" y="-3" text-anchor="middle" class="sm">214 m</text>
+      <text x="-4" y="55" text-anchor="middle" class="sm" transform="rotate(-90 -4 55)">110 m</text>
+      <text x="210" y="-3" text-anchor="end" class="sm">NO ↑</text>
+    </svg>
+  </div>
+  <div class="legend">
+    <span><i style="background:color-mix(in srgb,var(--water) 22%,var(--bg))"></i>kalt</span>
+    <span><i style="background:color-mix(in srgb,var(--sun) 22%,var(--bg))"></i>lau</span>
+    <span><i style="background:color-mix(in srgb,var(--porphyr) 22%,var(--bg))"></i>heiß</span>
+    <span><i style="background:color-mix(in srgb,var(--verde) 14%,var(--bg))"></i>Hof</span>
+    <span>Schema, nicht maßstäblich genau. Die Achse läuft von der Natatio im Nordosten zum Caldarium im Südwesten.</span>
+  </div>
+</section>
+
+<section>
+  <h2>Ideen <small>was die Szene zeigen soll</small></h2>
+  <div class="cols">
+    <div class="card">
+      <span class="tag" style="color:var(--sun)">Licht</span>
+      <p><b>Echter Sonnenlauf über Rom</b> (41,9° N) zu Datum und Uhrzeit, mit Zeitraffer. Am Nachmittag wandern die Lichtbalken durch das Caldarium, wie von den Baumeistern gewollt.</p>
+      <p><b>Volumetrische Strahlen:</b> Pro Pixel wird der Sehstrahl durch die Schattenkarte der Sonne abgetastet und mit der Dampfdichte gewichtet. Die Strahlen erscheinen also nur dort, wo Dampf in der Luft hängt. Kalte Säle bleiben klar, im Caldarium stehen dichte Lichtsäulen.</p>
+      <p><b>Lichtrückwurf:</b> Sonne auf dem polierten Boden hellt die Gewölbe warm auf (vorberechnete Lichtsonden), dazu Umgebungsverdeckung in Ecken und Kassetten, Bloom und Filmkurve.</p>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--water)">Wasser</span>
+      <p><b>Lebendige Becken:</b> Eine Wellen-Simulation als Höhenfeld je Becken. Wasserspeier und Fontänen stören sie, die Wellen laufen aus und werden an den Beckenrändern zurückgeworfen.</p>
+      <p><b>Spiegelung und Brechung</b> mit Fresnel: flach gesehen spiegelt die Natatio Fassade und Himmel, steil gesehen zeigt sie den Mosaikboden. <b>Kaustiken</b>, die Lichtnetze am Beckenboden, entstehen aus dem Höhenfeld.</p>
+      <p><b>Fontänen</b> als Tropfenpartikel mit Glitzern im Gegenlicht, Labrum-Schalen mit überlaufendem Rand.</p>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--stone)">Dampf und Nebel</span>
+      <p><b>Dampf nach Temperatur:</b> Er steigt dort auf, wo es heiß ist: Caldarium stark, Tepidarium schwach, Frigidarium gar nicht. Die Partikel folgen einer wirbelnden Strömung (Curl-Noise), steigen durch Auftrieb, sammeln sich unter der Kuppel und ziehen durch offene Fenster ab.</p>
+      <p><b>Weiche Partikel</b> ohne harte Kanten an Wänden, beleuchtet aus der Schattenkarte: Dampf im Lichtbalken glüht, Dampf im Schatten bleibt grau. Über den heißen Becken flimmert die Luft.</p>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--porphyr)">Stein und Oberflächen</span>
+      <p><b>Prozedurale Marmore</b> mit Maserung aus Turbulenz und Politurglanz: Giallo antico, Pavonazzetto, Cipollino, Porphyr, Verde antico, dazu grauer und roter Granit für die Säulen.</p>
+      <p><b>Mosaikböden</b> als Tesserae-Muster, kassettierte Stuckgewölbe, Ziegelkern und Travertin außen. Kein einziges Bild als Textur: alles in Java gerechnet, wie in deinen anderen Szenen.</p>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--verde)">Kamera</span>
+      <p><b>Freier Orbit mit Zoom</b> um das ganze Bauwerk, weich gedämpft. Zoom bis in die Hallen hinein, dann Wechsel in die Innenkamera.</p>
+      <p><b>Kamerafahrten:</b> Rundumblick um die Anlage, Anflug über die Natatio, Flug durch die Achse bis unter die Caldarium-Kuppel, Aufstieg in den Lichtstrahlen.</p>
+      <p><b>Rundgang eines Badegastes</b> in der römischen Badefolge: Apodyterium, Palästra, Caldarium, Tepidarium, Frigidarium, Natatio. Mit kurzen Tafeln zu jedem Saal.</p>
+    </div>
+    <div class="card">
+      <span class="tag" style="color:var(--warn)">Zugaben</span>
+      <p><b>Schnittmodell:</b> Das Dach blendet aus, darunter das Hypokaustum mit glühenden Praefurnien und sichtbarem Heißluftstrom durch Boden und Wandröhren.</p>
+      <p><b>Heute und 216:</b> Ein Zeitregler verwandelt die Ruine von heute in den Neubau. Marmorverkleidung wächst auf den Ziegelkern, Gewölbe schließen sich, Wasser steigt.</p>
+      <p><b>Wasserweg</b> vom Aquädukt über die Zisternen in die Becken, als fließende Linie. <b>Thermografie</b>: die Säle nach Temperatur gefärbt. <b>Ton</b> synthetisch: Plätschern, Tropfen und der lange Nachhall unter der Kuppel.</p>
+    </div>
+  </div>
+  <p class="muted" style="font-size:14px">Figuren von Badegästen lasse ich bewusst weg. Die Architektur trägt die Szene, und schlecht gemachte Menschen zerstören die Stimmung schneller als alles andere.</p>
+</section>
+
+<section>
+  <h2>Entscheidungen <small>am 25.09.2026 getroffen · überall A</small></h2>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>#</th><th>Frage</th><th>Optionen</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td class="q">Umfang des Baus</td><td>
+          <span class="opt rec"><i>A</i>Zentralbau vollständig (Natatio, Frigidarium, Tepidarium, Caldarium, Palästren, Nebensäle), dazu die Umfassung mit Gärten und Exedren vereinfacht</span>
+          <span class="opt"><i>B</i>Ganze Anlage im Detail: Zisternen, Bibliotheken, Stadion, Gärten</span>
+          <span class="opt"><i>C</i>Nur die Hauptachse von der Natatio bis zum Caldarium</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">2</td><td class="q">Renderer</td><td>
+          <span class="opt rec"><i>A</i>Eigene Software-Szene in <code>com.dan.caracalla</code> nach dem Vorbild von RayPhong und Vulcano. Keine Zusatzbibliothek, die „Shader“ sind Java-Pixelprogramme. Ich kann jedes Bild hier nachrechnen und prüfen.</span>
+          <span class="opt"><i>B</i>LWJGL 3 mit GLSL-Shadern auf der Grafikkarte. Schneller und feiner, aber neue native Bibliotheken, heikle Einbettung in Swing, und ich kann es von hier aus nicht testen.</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">3</td><td class="q">Woher die Geometrie kommt</td><td>
+          <span class="opt rec"><i>A</i>Parametrisch im Code nach dem überlieferten Grundriss. Säle, Maße, Gewölbeformen und Fenster sind Daten, die später auch aus der DB kommen können.</span>
+          <span class="opt"><i>B</i>In Blender modellieren (über MCP auf deinem Rechner) und importieren</span>
+          <span class="opt"><i>C</i>Mischung: Bau parametrisch, Zierteile wie Kapitelle und Statuen aus Blender</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">4</td><td class="q">Innen und außen</td><td>
+          <span class="opt rec"><i>A</i>Beides: Außenansicht mit abnehmbarem Dach (Schnittmodell) und Innenkamera in den Sälen</span>
+          <span class="opt"><i>B</i>Nur Außenansicht</span>
+          <span class="opt"><i>C</i>Nur Innenräume</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">5</td><td class="q">Zeit und Licht</td><td>
+          <span class="opt rec"><i>A</i>Sonnenlauf über Rom zu frei wählbarem Datum und Uhrzeit, mit Zeitraffer; Wetter klar oder dunstig</span>
+          <span class="opt"><i>B</i>Drei feste Stimmungen: Morgen, Mittag, Abendrot</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">6</td><td class="q">Kamera</td><td>
+          <span class="opt rec"><i>A</i>Freier Orbit mit Zoom, Kamerafahrten und der geführte Rundgang in der Badefolge</span>
+          <span class="opt"><i>B</i>Freier Orbit mit Zoom und Kamerafahrten, kein Rundgang</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">7</td><td class="q">Ablauf</td><td>
+          <span class="opt rec"><i>A</i>Drehbuch mit Zeitleiste („Ein Tag in den Thermen“, einige Minuten) und freies Erkunden, jederzeit umschaltbar</span>
+          <span class="opt"><i>B</i>Nur freies Erkunden</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">8</td><td class="q">Zugaben</td><td>
+          <span class="opt rec"><i>A</i>Alle: Schnittmodell mit Hypokaustum, Ruine ↔ Neubau, Wasserweg, Thermografie, synthetischer Ton mit Kuppelhall</span>
+          <span class="opt"><i>B</i>Nur Schnittmodell und Ton</span>
+          <span class="opt"><i>C</i>Keine, alle Kraft in Licht, Wasser und Dampf</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">9</td><td class="q">Oberfläche</td><td>
+          <span class="opt rec"><i>A</i>FFrame aus FStyle.jar mit Bedienfeld, Regieleiste und Kinomodus, wie bei Vulcano</span>
+          <span class="opt"><i>B</i>Schlichter JFrame, nur Szene und Tastenkürzel</span></td><td><span class="pill done">A</span></td></tr>
+        <tr><td class="n">10</td><td class="q">Datenbank</td><td>
+          <span class="opt rec"><i>A</i>Eigene Phase nach der Szene, mit eigener Planung und Bestandsaufnahme in DEMO. Die App startet immer auch ohne DB.</span>
+          <span class="opt"><i>B</i>DB von Anfang an als Quelle des Grundrisses</span></td><td><span class="pill done">A</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Phasen <small>Vorschlag</small></h2>
+  <div class="phases">
+    <div class="ph"><span class="n">0</span><div><h3>Konzept</h3><p>Ideen, Entscheidungen, dieses Werkbuch.</p></div><span class="pill done">fertig</span></div>
+    <div class="ph"><span class="n">1</span><div><h3>Bau und Kamera</h3><p>Parametrischer Zentralbau mit Sälen, Gewölben, Kuppel und Fenstern. Himmel, Sonne, Grundlicht. Orbit, Zoom, Innenkamera. App-Gerüst auf FFrame, <code>main.class</code> gesetzt. Vorgezogen: Schattenkarten und Himmelssicht.</p></div><span class="pill done">geliefert</span></div>
+    <div class="ph"><span class="n">2</span><div><h3>Stein</h3><p>Marmore, Granit, Mosaik, Kassetten, Ziegel und Travertin. Feinere Umgebungsverdeckung, Statuen in den Nischen.</p></div><span class="pill done">fertig</span></div>
+    <div class="ph"><span class="n">3</span><div><h3>Licht</h3><p>Sonnenlauf über Rom, volumetrische Strahlen durch die Fenster, Lichtrückwurf, Bloom, Filmkurve.</p></div><span class="pill done">fertig</span></div>
+    <div class="ph"><span class="n">4</span><div><h3>Wasser</h3><p>Wellen-Höhenfeld, Spiegelung, Brechung, Fresnel, Kaustiken, Fontänen und Wasserspeier.</p></div><span class="pill done">geliefert</span></div>
+    <div class="ph"><span class="n">5</span><div><h3>Dampf und Nebel</h3><p>Partikel nach Temperatur, Wirbelströmung, weiche Partikel im Licht, Hitzeflimmern. Zusammenspiel mit den Strahlen.</p></div><span class="pill done">geliefert</span></div>
+    <div class="ph"><span class="n">6</span><div><h3>Regie</h3><p>Kamerafahrten, Rundgang in der Badefolge, Drehbuch mit Zeitleiste.</p></div><span class="pill done">geliefert</span></div>
+    <div class="ph"><span class="n">7</span><div><h3>Zugaben</h3><p>Schnittmodell mit Hypokaustum, Ruine ↔ Neubau, Wasserweg, Thermografie, Ton.</p></div><span class="pill done">geliefert</span></div>
+    <div class="ph"><span class="n">8</span><div><h3>Datenbank</h3><p>Erst planen, dann bauen. Mögliche Themen: Raumprogramm der Säle, Materialkatalog mit den Steinbrüchen als Punkte in SRID 8307 (Carrara, Chemtou, Dokimeion, Mons Porphyrites, Assuan), Kamerafahrten, Drehbuch, Voreinstellungen. Präfix-Vorschlag <code>CAR_</code>, vorher eine Bestandsaufnahme in DEMO.</p></div><span class="pill done">geliefert</span></div>
+    <div class="ph"><span class="n">9</span><div><h3>Schliff</h3><p>Qualität Auto, Standbild, Kinomodus, Tastenkürzel.</p></div><span class="pill done">geliefert</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Zur Rekonstruktion</h2>
+  <p>Vieles ist gut belegt: Grundriss, Maße, die Lage der Säle und die Heizung. Anderes ist Deutung, etwa die genaue Form der Caldarium-Kuppel, die Fensterteilung und die Verteilung der Marmorsorten. Die Szene folgt den gängigen Rekonstruktionen und trifft dort, wo Befunde fehlen, eine plausible Wahl. Die Ruine im Zeitregler ist frei erzeugt, sie zeigt den Charakter der heutigen Anlage, nicht jede einzelne Mauer.</p>
+  <p class="src">Quellen: <a href="https://en.wikipedia.org/wiki/Baths_of_Caracalla">Baths of Caracalla (Wikipedia)</a> · <a href="https://vici.org/vici/7894/?lang=en">Vici.org</a> · <a href="https://www.ancient-history-sites.com/sites/baths-of-caracalla/">Ancient History Sites</a></p>
+</section>
+
+<section>
+  <h2>Protokoll</h2>
+  <div class="log">
+    <div><time>25.09.2026</time><span>Abschluss: README.md für GitHub mit 25 Bildern, alle 175 PNG aus der Entwicklung unter docs/bilder, .gitignore für Zugangsdaten und Build.</span></div>
+    <div><time>25.09.2026</time><span>Phase 9 geliefert: Qualität Auto, Standbild, Kinomodus, Tastenübersicht; Wetter-Schalter folgt dem Drehbuch.</span></div>
+    <div><time>25.09.2026</time><span>Phase 8 eingerichtet: DbSetup gegen Oracle 21.3 ohne Fehler, alle Prüfungen in Ordnung; Namenseingabe über FOptionPane.</span></div>
+    <div><time>25.09.2026</time><span>Phase 8 gebaut: Skripte, Einrichter mit Durchstich, Datenschicht, Steckbrief, Baugeschichte, Blicke; Inhalte recherchiert. Erster Lauf gegen Oracle steht aus.</span></div>
+    <div><time>25.09.2026</time><span>Phase 8: zehn Planungsfragen alle A; Tabellenentwurf mit neun Tabellen <code>CAR_</code> zur Freigabe vorgelegt.</span></div>
+    <div><time>25.09.2026</time><span>Phase 8 begonnen: Plan mit fünf Themen, grober Struktur und zehn offenen Fragen; Bestandsaufnahme <code>DbBestand</code> ins Projekt gelegt (nur lesend).</span></div>
+    <div><time>25.09.2026</time><span>Phase 7 geliefert: Schnitt mit Hypokaustum und Praefurnien, Zeitregler 216 und heute, Aquädukt und Wasserweg, Wärmebild, synthetischer Klang mit Saalhall; Bedienfeld mit FScrollBar.</span></div>
+    <div><time>25.09.2026</time><span>Phase 6 geliefert: drei Kamerafahrten, Rundgang mit Tafeln, Drehbuch „Ein Tag in den Thermen“ mit Zeitleiste, alle Wege kollisionsfrei geprüft.</span></div>
+    <div><time>25.09.2026</time><span>Phase 5 geliefert: Dampfteilchen mit Umwälzung und Kuppelsammlung, Dichtegitter für die Strahlen, Schwaden, Hitzeflimmern, Morgennebel über der Natatio.</span></div>
+    <div><time>25.09.2026</time><span>Phase 4 geliefert: Wellen, Spiegelung, Durchblick mit Lichtnetzen, Labrum, zehn Speier, Stein werfen per Klick.</span></div>
+    <div><time>25.09.2026</time><span>Phase 3 fertig: Lichtstrahlen im Dampf, Lichtrückwurf, Bloom, Zeitraffer, Wetter. Ins Projekt übertragen und abgeglichen.</span></div>
+    <div><time>25.09.2026</time><span>Phase 2 fertig: Kassetten, Wandverkleidung, Böden je Saal, 74 Statuen, Himmelssicht mit 48 Strahlen und Zwischenspeicher. Nachgereicht ins Projekt übertragen, als der Rechner wieder erreichbar war.</span></div>
+    <div><time>25.09.2026</time><span>Phase 1 geliefert: Bau, Park, Sonne, Schatten, Himmelssicht, Wasser, Orbit mit Zoom und Innenkamera, Bedienfeld. 22 Quelldateien in <code>com.dan.caracalla</code>, Projekt eingestellt.</span></div>
+    <div><time>25.09.2026</time><span>Entscheidungen: überall A.</span></div>
+    <div><time>25.09.2026</time><span>Auftrag aufgenommen. Projektordner geprüft: leer, JDK 21, FStyle.jar und ojdbc11.jar vorhanden. Werkbuch angelegt mit Ideen, zehn Entscheidungen und Phasenplan.</span></div>
+  </div>
+</section>
+
+</div>
+
+<script>
+(function(){
+  const cv=document.getElementById('hero'); const cx=cv.getContext('2d');
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W=800,H=500,dpr=1;
+  function size(){
+    const r=cv.getBoundingClientRect(); dpr=Math.min(window.devicePixelRatio||1,2);
+    cv.width=Math.max(320,Math.round(r.width*dpr)); cv.height=Math.max(200,Math.round(r.height*dpr));
+  }
+  size(); window.addEventListener('resize',()=>{size(); if(reduce) draw(4);});
+
+  // Szene in 800x500-Koordinaten
+  const wins=[{x:170,w:62},{x:369,w:62},{x:568,w:62}];
+  const winTop=120, winBot=270, poolY=392, beamDX=250;
+  // Dampfpartikel
+  const P=[]; let seed=7; const rnd=()=>{seed=(seed*16807)%2147483647; return seed/2147483647;};
+  function spawn(p,init){
+    p.x=120+rnd()*560; p.y=init? poolY-rnd()*300 : poolY+rnd()*10; p.r=18+rnd()*30;
+    p.vx=(rnd()-.5)*6; p.vy=-(8+rnd()*12); p.a=0; p.life=0; p.max=9+rnd()*9; p.ph=rnd()*6.28;
+    if(init){p.life=rnd()*p.max;}
+  }
+  for(let i=0;i<150;i++){const p={}; spawn(p,true); P.push(p);}
+
+  function beamLight(x,y){ // wie stark liegt (x,y) in einem Lichtbalken
+    if(y<winBot-40) return 0; let s=0;
+    for(const w of wins){
+      const t=(y-winTop)/(poolY+40-winTop); const cxm=w.x+w.w/2+t*beamDX; const half=w.w/2+t*28;
+      const d=Math.abs(x-cxm); if(d<half) s=Math.max(s,1-d/half);
+    }
+    return s;
+  }
+
+  let last=performance.now(), T=0;
+  function draw(t){
+    const sx=cv.width/W, sy=cv.height/H; cx.setTransform(sx,0,0,sy,0,0);
+    // Innenraum
+    let g=cx.createLinearGradient(0,0,0,H); g.addColorStop(0,'#1a1512'); g.addColorStop(.55,'#2a221c'); g.addColorStop(1,'#15110f');
+    cx.fillStyle=g; cx.fillRect(0,0,W,H);
+    // Kuppel und Kassetten
+    cx.save(); cx.strokeStyle='rgba(210,180,140,.08)'; cx.lineWidth=1.2;
+    for(let i=0;i<6;i++){cx.beginPath(); cx.ellipse(400,120,380-i*50,150-i*20,0,Math.PI,2*Math.PI); cx.stroke();}
+    for(let a=0;a<=12;a++){const an=Math.PI+a*Math.PI/12; cx.beginPath(); cx.moveTo(400+Math.cos(an)*130,120+Math.sin(an)*50); cx.lineTo(400+Math.cos(an)*380,120+Math.sin(an)*150); cx.stroke();}
+    cx.restore();
+    // Oculus-Schimmer
+    g=cx.createRadialGradient(400,-10,2,400,-10,90); g.addColorStop(0,'rgba(255,230,180,.35)'); g.addColorStop(1,'rgba(255,230,180,0)');
+    cx.fillStyle=g; cx.fillRect(300,-10,200,110);
+    // Säulen
+    for(const x of [95,290,490,690]){
+      g=cx.createLinearGradient(x-16,0,x+16,0); g.addColorStop(0,'#241d19'); g.addColorStop(.5,'#4b3e35'); g.addColorStop(1,'#1f1916');
+      cx.fillStyle=g; cx.fillRect(x-16,110,32,poolY-110); cx.fillStyle='#3a3029'; cx.fillRect(x-22,104,44,10); cx.fillRect(x-22,poolY-12,44,12);
+    }
+    // Fenster
+    const flick=.9+.1*Math.sin(t*.7);
+    for(const w of wins){
+      g=cx.createLinearGradient(0,winTop,0,winBot); g.addColorStop(0,'#fff4d8'); g.addColorStop(1,'#f3c77a');
+      cx.fillStyle=g; cx.beginPath(); cx.moveTo(w.x,winBot); cx.lineTo(w.x,winTop+w.w/2); cx.arc(w.x+w.w/2,winTop+w.w/2,w.w/2,Math.PI,0); cx.lineTo(w.x+w.w,winBot); cx.closePath(); cx.fill();
+      cx.strokeStyle='rgba(60,45,30,.8)'; cx.lineWidth=3; cx.beginPath(); cx.moveTo(w.x+w.w/2,winTop); cx.lineTo(w.x+w.w/2,winBot); cx.moveTo(w.x,winTop+95); cx.lineTo(w.x+w.w,winTop+95); cx.stroke();
+    }
+    // Lichtbalken (additiv)
+    cx.save(); cx.globalCompositeOperation='lighter';
+    wins.forEach((w,i)=>{
+      const k=(.16+.05*Math.sin(t*.35+i*1.7))*flick;
+      g=cx.createLinearGradient(w.x,winTop,w.x+beamDX,poolY+40);
+      g.addColorStop(0,`rgba(255,215,150,${k*1.4})`); g.addColorStop(.6,`rgba(255,200,130,${k})`); g.addColorStop(1,'rgba(255,190,120,0)');
+      cx.fillStyle=g; cx.beginPath();
+      cx.moveTo(w.x+4,winTop+w.w/2); cx.lineTo(w.x+w.w-4,winTop+w.w/2);
+      cx.lineTo(w.x+w.w+beamDX+28,poolY+40); cx.lineTo(w.x+beamDX-28,poolY+40); cx.closePath(); cx.fill();
+    });
+    cx.restore();
+    // Becken
+    g=cx.createLinearGradient(0,poolY,0,H); g.addColorStop(0,'#1d4a52'); g.addColorStop(1,'#0c2227');
+    cx.fillStyle=g; cx.fillRect(0,poolY,W,H-poolY);
+    cx.fillStyle='#bfae96'; cx.fillRect(0,poolY-4,W,6); // Marmorrand
+    cx.save(); cx.globalCompositeOperation='lighter';
+    for(let row=0;row<14;row++){
+      const y=poolY+10+row*row*.55+row*4; const amp=1+row*.25;
+      for(let x=0;x<W;x+=18+row*2){
+        const ph=Math.sin(x*.045+t*1.4+row*1.3)+Math.sin(x*.021-t*.9+row);
+        const b=beamLight(x,poolY+30); const a=.05+.25*b+.06*Math.max(0,ph);
+        cx.strokeStyle=`rgba(${200+55*b|0},${225+20*b|0},${235},${a})`; cx.lineWidth=1+row*.08;
+        cx.beginPath(); cx.moveTo(x,y+ph*amp); cx.lineTo(x+8+row,y+ph*amp+.6); cx.stroke();
+      }
+    }
+    // Kaustik-Flecken, wo die Strahlen das Wasser treffen
+    wins.forEach((w,i)=>{
+      const cxm=w.x+w.w/2+beamDX+10;
+      for(let j=0;j<5;j++){
+        const px=cxm+Math.sin(t*1.1+j*2.1+i)*30, py=poolY+22+j*9+Math.cos(t*1.3+j)*3;
+        g=cx.createRadialGradient(px,py,0,px,py,26); g.addColorStop(0,'rgba(255,235,190,.28)'); g.addColorStop(1,'rgba(255,235,190,0)');
+        cx.fillStyle=g; cx.fillRect(px-26,py-26,52,52);
+      }
+    });
+    cx.restore();
+    // Dampf
+    for(const p of P){
+      const f=p.life/p.max; const alpha=Math.sin(Math.PI*Math.min(1,f))*.16;
+      const lit=beamLight(p.x,p.y); const r=p.r*(1+f*1.4);
+      const c=lit>0?`rgba(${230+25*lit|0},${215+20*lit|0},${190+10*lit|0},${alpha*(1+2.2*lit)})`:`rgba(150,140,132,${alpha*.7})`;
+      g=cx.createRadialGradient(p.x,p.y,0,p.x,p.y,r); g.addColorStop(0,c); g.addColorStop(1,'rgba(150,140,132,0)');
+      cx.fillStyle=g; cx.fillRect(p.x-r,p.y-r,2*r,2*r);
+    }
+    // Vignette
+    g=cx.createRadialGradient(400,260,120,400,260,520); g.addColorStop(0,'rgba(0,0,0,0)'); g.addColorStop(1,'rgba(0,0,0,.55)');
+    cx.fillStyle=g; cx.fillRect(0,0,W,H);
+  }
+  function step(dt,t){
+    for(const p of P){
+      p.life+=dt; if(p.life>p.max){spawn(p,false); continue;}
+      p.vx+=Math.sin(p.y*.02+t*.6+p.ph)*4*dt; p.x+=p.vx*dt; p.y+=p.vy*dt;
+    }
+  }
+  if(reduce){ for(let i=0;i<60;i++) step(.2,i*.2); draw(4); return; }
+  function loop(now){
+    const dt=Math.min(.05,(now-last)/1000); last=now; T+=dt;
+    step(dt,T); draw(T); requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+
+</body></html>

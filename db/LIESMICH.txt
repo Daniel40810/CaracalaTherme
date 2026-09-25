@@ -1,0 +1,21 @@
+Caracalla-Thermen · Datenbank (Phase 8)
+=======================================
+
+Schema DEMO, alle Objekte mit dem Präfix CAR_. Die App läuft auch ohne Datenbank.
+
+Dateien
+  db.properties      Verbindung (url, user, password). Nicht ins JAR, nicht weitergeben.
+  01_tabellen.sql    neun Tabellen, Spatial-Metadaten, räumliche Indizes
+  02_inhalte.sql     Säle, Steinbrüche mit Wegen nach Rom, Steine, Material-Zuordnung, Baugeschichte
+  03_regie.sql       Fahrten, Rundgang, Drehbuch (erzeugt aus Programme.java)
+  99_abbau.sql       entfernt alles mit CAR_
+  gen/inhalte.py     erzeugt 02_inhalte.sql aus den recherchierten Daten
+
+Einrichten (NetBeans)
+  1. tools/DbBestand.java   Run File  ->  db/bestand.txt   (nur lesend, Bestandsaufnahme)
+  2. db/DbSetup.java        Run File  ->  db/einrichtung.txt
+     Argument "neu" baut vorher alles mit CAR_ ab, "pruefen" prüft nur, "abbau" baut nur ab.
+  Die Skripte laufen auch in SQL*Plus oder SQL Developer (F5): jede Anweisung endet mit "/".
+
+Regie neu erzeugen, wenn Programme.java geändert wurde
+  tools/RegieExport.java    Run File  ->  db/03_regie.sql
