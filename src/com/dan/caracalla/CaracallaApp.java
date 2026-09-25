@@ -26,6 +26,7 @@ public final class CaracallaApp {
 
     private static void open() {
         FFrame f = new FFrame("Caracalla-Thermen · Thermae Antoninianae");
+        com.dan.caracalla.ui.AppIcon.install(f);
         ScenePanel scene = new ScenePanel();
         ControlPanel controls = new ControlPanel(scene);
         JLabel status = new JLabel(" ");
